@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller.ru Analytics</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Подключение скриптов -->
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/ml_charts.js"></script>
+    <!-- Убедитесь, что Plotly.js подключен -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Новый скрипт для ML-интеграции -->
+    <script src="js/ml_integration.js"></script>
+    <script src="js/analytics_charts.js"></script>
+
+</head>
+
+<body>
+    <!-- Боковое меню -->
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fas fa-chart-line"></i>
+            <span>Seller.ru Analytics</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-link active" data-page="dashboard">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Дашборд</span>
+            </a>
+            <a href="#" class="nav-link" data-page="models">
+                <i class="fas fa-robot"></i>
+                <span>Модели</span>
+            </a>
+            <a href="#" class="nav-link" data-page="reports">
+                <i class="fas fa-file-alt"></i>
+                <span>Отчеты</span>
+            </a>
+                <!-- НОВЫЕ СТРАНИЦЫ -->
+            <a href="#" class="nav-link" data-page="analytics">
+                <i class="fas fa-chart-bar"></i>
+                <span>Аналитика</span>
+            </a>
+            <a href="#" class="nav-link" data-page="campaigns">
+                <i class="fas fa-bullhorn"></i>
+                <span>Кампании</span>
+            </a>
+            <a href="#" class="nav-link" data-page="audience">
+                <i class="fas fa-users"></i>
+                <span>Аудитория</span>
+            </a>
+            <a href="#" class="nav-link" data-page="competitors">
+                <i class="fas fa-chart-line"></i>
+                <span>Конкуренты</span>
+            </a>
+            <a href="#" class="nav-link" data-page="keywords">
+                <i class="fas fa-key"></i>
+                <span>Ключевые слова</span>
+            </a>
+            <a href="#" class="nav-link" data-page="content">
+                <i class="fas fa-newspaper"></i>
+                <span>Контент</span>
+            </a>
+            <a href="#" class="nav-link" data-page="settings">
+                <i class="fas fa-cog"></i>
+                <span>Настройки</span>
+            </a>
+            <!-- КОНЕЦ НОВЫХ СТРАНИЦ -->
+        </nav>
+        
+        <!-- Панель администратора -->
+        <div class="admin-panel">
+            <div class="admin-info">
+                <div class="avatar">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="admin-details">
+                    <span class="admin-name">Администратор</span>
+                    <span class="admin-role">Админ</span>
+                </div>
+            </div>
+            <div class="admin-actions">
+                <button id="logout-btn" class="btn btn-sm btn-outline" title="Выйти">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="main-content" id="main-content">
+        <!-- Верхняя панель -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title">Дашборд</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <span class="user-name">Администратор</span>
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Контейнер для страниц -->
+        <div class="page-container">
+            <!-- Страница: Dashboard -->
+            <div id="dashboard-page" class="page active">
+                <!-- Секция статистики -->
+                <div class="stats-grid">
+                    <!-- Карточки статистики -->
+                    <div class="stat-card">
+                        <div class="card-header">
+                            <h3>ROI</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="value" id="roi-value">1.85</div>
+                            <div class="trend down" id="roi-trend">↓ -0.15</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-header">
+                            <h3>Расходы</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="value" id="spend-value">3 479 547 ₽</div>
+                            <div class="trend up" id="spend-trend">↑ +8.9%</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-header">
+                            <h3>Конверсия</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="value" id="conversion-value">3.34%</div>
+                            <div class="trend down" id="conversion-trend">↓ -8.9%</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-header">
+                            <h3>CPC</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="value" id="cpc-value">78.50 ₽</div>
+                            <div class="trend up" id="cpc-trend">↑ +12.3%</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-header">
+                            <h3>Прибыль</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="value" id="profit-value">6 234 890 ₽</div>
+                            <div class="trend down" id="profit-trend">↓ -5.2%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Секция графиков -->
+                <div class="charts-grid">
+                    <!-- Графики -->
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-chart-line"></i> CTR и конверсия</h3>
+                            <div class="chart-actions">
+                                <button class="btn btn-sm btn-outline" data-chart="ctr-cr-chart"><i
+                                        class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div id="ctr-cr-chart" class="chart-wrapper"></div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-money-bill-wave"></i> Расходы и выручка</h3>
+                            <div class="chart-actions">
+                                <button class="btn btn-sm btn-outline" data-chart="spend-revenue-chart"><i
+                                        class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div id="spend-revenue-chart" class="chart-wrapper"></div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-infinity"></i> ROI</h3>
+                            <div class="chart-actions">
+                                <button class="btn btn-sm btn-outline" data-chart="roi-chart"><i
+                                        class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div id="roi-chart" class="chart-wrapper"></div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-wallet"></i> Прибыль по категориям</h3>
+                            <div class="chart-actions">
+                                <button class="btn btn-sm btn-outline" data-chart="profit-chart"><i
+                                        class="fas fa-expand"></i></button>
+                            </div>
+                        </div>
+                        <div id="profit-chart" class="chart-wrapper"></div>
+                    </div>
+                </div>
+
+                <!-- НОВАЯ СЕКЦИЯ ML-МОДЕЛИ -->
+                <div class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-robot"></i> ML-Модель: обучение и предсказания</h2>
+                        <div class="chart-actions">
+                            <button id="refresh-ml-charts" class="btn btn-sm btn-outline">
+                                <i class="fas fa-sync"></i> Обновить
+                            </button>
+                            <button id="train-model-btn" class="btn btn-primary">
+                                <i class="fas fa-brain"></i> Обучить модель
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Индикатор загрузки (изначально скрыт) -->
+                        <div id="ml-loading-indicator" class="loading-indicator" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>Обучение модели...</p>
+                            <div class="progress">
+                                <!-- Исправлено: добавлен внутренний элемент с id="training-progress-fill" -->
+                                <div class="progress-bar" id="training-progress-fill" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span id="training-progress-text">0%</span>
+                        </div>
+                    <!-- Контейнер для ошибок -->
+                    <div id="ml-error-container" class="mb-4"></div>
+
+                    <!-- Статус обучения -->
+                    <div class="ml-status-card">
+                        <div class="status-header">
+                            <h3><i class="fas fa-microchip"></i> Статус модели</h3>
+                            <span data-dynamic="model-trained-status" class="status-badge status-warning">Не обучена</span>
+                        </div>
+                        <div class="status-content">
+                            <div class="status-item">
+                                <span class="status-label">Точность (MAPE CTR):</span>
+                                <span data-dynamic="model-accuracy-ctr" class="status-value">-</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Точность (RMSE Расходы):</span>
+                                <span data-dynamic="model-accuracy-spend" class="status-value">-</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Последнее обучение:</span>
+                                <span data-dynamic="last-training" class="status-value">Никогда</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Графики ML -->
+                    <div class="charts-grid">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3><i class="fas fa-percentage"></i> CTR: история и предсказания</h3>
+                                <div class="chart-actions">
+                                    <button class="btn btn-sm btn-outline" data-chart="ctr-prediction-chart">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="ctr-prediction-chart" class="chart-wrapper" style="height: 400px;"></div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3><i class="fas fa-ruble-sign"></i> Расходы: история и предсказания</h3>
+                                <div class="chart-actions">
+                                    <button class="btn btn-sm btn-outline" data-chart="spend-prediction-chart">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="spend-prediction-chart" class="chart-wrapper" style="height: 400px;"></div>
+                        </div>
+                        <div class="chart-container full-width">
+                            <div class="chart-header">
+                                <h3><i class="fas fa-list"></i> Важность признаков</h3>
+                                <div class="chart-actions">
+                                    <button class="btn btn-sm btn-outline" data-chart="feature-importance-chart">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="feature-importance-chart" class="chart-wrapper" style="height: 400px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Рекомендации -->
+                    <div class="recommendations">
+                        <h3><i class="fas fa-lightbulb"></i> Рекомендации</h3>
+                        <div id="ml-recommendations" class="recommendation-cards">
+                            <div class="no-data-message">
+                                <i class="fas fa-info-circle"></i>
+                                <p>Рекомендации будут доступны после обучения модели.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- КОНЕЦ СЕКЦИИ ML-МОДЕЛИ -->
+
+            </div> <!-- Конец dashboard-page -->
+            
+                        <!-- Страница: Аналитика -->
+            <div id="analytics-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-chart-bar"></i> Аналитика</h2>
+                    <p class="page-description">Подробная аналитика по всем направлениям бизнеса на маркетплейсах</p>
+                </div>
+                
+                <!-- Фильтры и выбор периода -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div>
+                                <label class="form-label">Маркетплейс</label>
+                                <select class="form-control">
+                                    <option>Все маркетплейсы</option>
+                                    <option>Wildberries</option>
+                                    <option>Ozon</option>
+                                    <option>Яндекс.Маркет</option>
+                                    <option>AliExpress</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Категория</label>
+                                <select class="form-control">
+                                    <option>Все категории</option>
+                                    <option>Электроника</option>
+                                    <option>Одежда</option>
+                                    <option>Дом и сад</option>
+                                    <option>Красота</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Период</label>
+                                <select class="form-control">
+                                    <option>Последние 7 дней</option>
+                                    <option>Последние 30 дней</option>
+                                    <option>Последние 90 дней</option>
+                                    <option>Произвольный период</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button class="btn btn-primary w-full">
+                                    <i class="fas fa-filter"></i> Применить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Основные метрики -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Продажи</h3>
+                            <p class="stat-value">12 450</p>
+                            <p class="stat-desc">шт. (+15.2%)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Выручка</h3>
+                            <p class="stat-value">₽2.3M</p>
+                            <p class="stat-desc">(+12.8%)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Конверсия</h3>
+                            <p class="stat-value">4.25%</p>
+                            <p class="stat-desc">(-2.1%)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Рейтинг</h3>
+                            <p class="stat-value">4.7/5</p>
+                            <p class="stat-desc">(+0.1)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Графики -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Динамика продаж по маркетплейсам</h3>
+                            <button class="btn-icon" data-chart="sales-by-marketplace">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="sales-by-marketplace" class="chart-wrapper"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Рейтинг и отзывы</h3>
+                            <button class="btn-icon" data-chart="rating-reviews">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="rating-reviews" class="chart-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таблица с товарами -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Топ продаваемых товаров</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-download"></i> Экспорт
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Товар</th>
+                                        <th>Артикул</th>
+                                        <th>Маркетплейс</th>
+                                        <th>Продажи</th>
+                                        <th>Выручка</th>
+                                        <th>Рейтинг</th>
+                                        <th>Отзывы</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Беспроводные наушники Bluetooth</span>
+                                            </div>
+                                        </td>
+                                        <td>WB-12345</td>
+                                        <td>Wildberries</td>
+                                        <td>1 250 шт</td>
+                                        <td>₽450 000</td>
+                                        <td>4.8</td>
+                                        <td>124</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Смартфон XYZ Pro</span>
+                                            </div>
+                                        </td>
+                                        <td>OZ-67890</td>
+                                        <td>Ozon</td>
+                                        <td>890 шт</td>
+                                        <td>₽1 200 000</td>
+                                        <td>4.6</td>
+                                        <td>89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Умная колонка с голосовым помощником</span>
+                                            </div>
+                                        </td>
+                                        <td>YM-54321</td>
+                                        <td>Яндекс.Маркет</td>
+                                        <td>650 шт</td>
+                                        <td>₽325 000</td>
+                                        <td>4.7</td>
+                                        <td>67</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Кампании -->
+            <div id="campaigns-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-bullhorn"></i> Рекламные кампании</h2>
+                    <p class="page-description">Управление и анализ рекламных кампаний на маркетплейсах</p>
+                </div>
+                
+                <!-- Кнопки действий -->
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Создать кампанию
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-chart-line"></i> Анализ эффективности
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-copy"></i> Копировать кампанию
+                    </button>
+                </div>
+                
+                <!-- Сводка по кампаниям -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Активные кампании</h3>
+                            <p class="stat-value">24</p>
+                            <p class="stat-desc">+3 за последнюю неделю</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Бюджет в месяц</h3>
+                            <p class="stat-value">₽450K</p>
+                            <p class="stat-desc">₽320K в прошлом месяце</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>ROI рекламы</h3>
+                            <p class="stat-value">3.2x</p>
+                            <p class="stat-desc">+0.4 по сравнению с прошлым месяцем</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтры -->
+                <div class="card mt-6">
+                    <div class="card-body">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                            <div>
+                                <label class="form-label">Статус</label>
+                                <select class="form-control">
+                                    <option>Все</option>
+                                    <option>Активные</option>
+                                    <option>Приостановленные</option>
+                                    <option>Завершенные</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Маркетплейс</label>
+                                <select class="form-control">
+                                    <option>Все</option>
+                                    <option>Wildberries</option>
+                                    <option>Ozon</option>
+                                    <option>Яндекс.Маркет</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Тип кампании</label>
+                                <select class="form-control">
+                                    <option>Все</option>
+                                    <option>Поиск</option>
+                                    <option>Каталог</option>
+                                    <option>Рекомендации</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Дата</label>
+                                <input type="text" class="form-control" placeholder="Выберите период">
+                            </div>
+                            <div class="flex items-end">
+                                <button class="btn btn-primary w-full">
+                                    <i class="fas fa-search"></i> Найти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таблица кампаний -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Список кампаний</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-sync"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Название кампании</th>
+                                        <th>Маркетплейс</th>
+                                        <th>Тип</th>
+                                        <th>Статус</th>
+                                        <th>Бюджет</th>
+                                        <th>Расход</th>
+                                        <th>Показы</th>
+                                        <th>Клики</th>
+                                        <th>CTR</th>
+                                        <th>Конверсия</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Продвижение наушников WB</td>
+                                        <td>Wildberries</td>
+                                        <td>Поиск</td>
+                                        <td><span class="status-badge status-success">Активна</span></td>
+                                        <td>₽50 000</td>
+                                        <td>₽32 500</td>
+                                        <td>125 000</td>
+                                        <td>8 750</td>
+                                        <td>7.0%</td>
+                                        <td>3.2%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-pause"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смартфоны Ozon</td>
+                                        <td>Ozon</td>
+                                        <td>Каталог</td>
+                                        <td><span class="status-badge status-warning">Приостановлена</span></td>
+                                        <td>₽75 000</td>
+                                        <td>₽45 000</td>
+                                        <td>98 000</td>
+                                        <td>6 200</td>
+                                        <td>6.3%</td>
+                                        <td>2.8%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-play"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Умные колонки YM</td>
+                                        <td>Яндекс.Маркет</td>
+                                        <td>Рекомендации</td>
+                                        <td><span class="status-badge status-success">Активна</span></td>
+                                        <td>₽30 000</td>
+                                        <td>₽18 750</td>
+                                        <td>75 000</td>
+                                        <td>5 250</td>
+                                        <td>7.0%</td>
+                                        <td>3.5%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-pause"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Аудитория -->
+            <div id="audience-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-users"></i> Аудитория</h2>
+                    <p class="page-description">Анализ целевой аудитории покупателей на маркетплейсах</p>
+                </div>
+                
+                <!-- Демография -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Возрастная структура</h3>
+                            <button class="btn-icon" data-chart="age-structure">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="age-structure" class="chart-wrapper"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Половое распределение</h3>
+                            <button class="btn-icon" data-chart="gender-distribution">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="gender-distribution" class="chart-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- География -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Географическое распределение покупателей</h3>
+                        <button class="btn-icon" data-chart="geography-distribution">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div id="geography-distribution" class="chart-wrapper"></div>
+                    </div>
+                </div>
+                
+                <!-- Интересы и поведение -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Интересы аудитории</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags-list">
+                                <span class="tag tag-primary">Электроника</span>
+                                <span class="tag tag-success">Смартфоны</span>
+                                <span class="tag tag-warning">Аудио</span>
+                                <span class="tag tag-info">Гаджеты</span>
+                                <span class="tag tag-secondary">Технологии</span>
+                                <span class="tag tag-primary">Наушники</span>
+                                <span class="tag tag-success">Умный дом</span>
+                                <span class="tag tag-warning">Фото и видео</span>
+                                <span class="tag tag-info">Компьютеры</span>
+                                <span class="tag tag-secondary">Аксессуары</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Поведенческие сегменты</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="segments-list">
+                                <div class="segment-item">
+                                    <div class="segment-info">
+                                        <h4>Постоянные клиенты</h4>
+                                        <p>Покупают регулярно, высокий LTV</p>
+                                    </div>
+                                    <div class="segment-value">32%</div>
+                                </div>
+                                <div class="segment-item">
+                                    <div class="segment-info">
+                                        <h4>Новые клиенты</h4>
+                                        <p>Первые покупки, потенциал роста</p>
+                                    </div>
+                                    <div class="segment-value">28%</div>
+                                </div>
+                                <div class="segment-item">
+                                    <div class="segment-info">
+                                        <h4>Отказники</h4>
+                                        <p>Добавляли в корзину, но не купили</p>
+                                    </div>
+                                    <div class="segment-value">25%</div>
+                                </div>
+                                <div class="segment-item">
+                                    <div class="segment-info">
+                                        <h4>Сезонные покупатели</h4>
+                                        <p>Покупают по праздникам и акциям</p>
+                                    </div>
+                                    <div class="segment-value">15%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Конкуренты -->
+            <div id="competitors-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-chart-line"></i> Конкуренты</h2>
+                    <p class="page-description">Анализ и сравнение с конкурентами на маркетплейсах</p>
+                </div>
+                
+                <!-- Поиск конкурентов -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="flex-grow">
+                                <label class="form-label">Введите артикул или название товара конкурента</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Артикул или название товара">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-search"></i> Найти
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="form-label">Маркетплейс</label>
+                                <select class="form-control">
+                                    <option>Wildberries</option>
+                                    <option>Ozon</option>
+                                    <option>Яндекс.Маркет</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Сводка по конкурентам -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Конкурентов</h3>
+                            <p class="stat-value">42</p>
+                            <p class="stat-desc">в выбранной категории</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Средняя цена</h3>
+                            <p class="stat-value">₽3 450</p>
+                            <p class="stat-desc">наша цена ₽2 990</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Средний рейтинг</h3>
+                            <p class="stat-value">4.3/5</p>
+                            <p class="stat-desc">наш рейтинг 4.7/5</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Отзывы</h3>
+                            <p class="stat-value">1 240</p>
+                            <p class="stat-desc">наши отзывы 890</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таблица конкурентов -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Топ конкурентов</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-download"></i> Экспорт
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Конкурент</th>
+                                        <th>Артикул</th>
+                                        <th>Цена</th>
+                                        <th>Рейтинг</th>
+                                        <th>Отзывы</th>
+                                        <th>Продажи</th>
+                                        <th>Наша позиция</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Наушники Bluetooth Pro</span>
+                                            </div>
+                                        </td>
+                                        <td>WB-98765</td>
+                                        <td>₽3 200</td>
+                                        <td>4.5</td>
+                                        <td>340</td>
+                                        <td>Оценка: 1 200 шт/мес</td>
+                                        <td>2 из 5</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-chart-line"></i> Анализ
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Премиум наушники беспроводные</span>
+                                            </div>
+                                        </td>
+                                        <td>OZ-45678</td>
+                                        <td>₽3 800</td>
+                                        <td>4.7</td>
+                                        <td>210</td>
+                                        <td>Оценка: 850 шт/мес</td>
+                                        <td>1 из 5</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-chart-line"></i> Анализ
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Спортивные наушники водонепроницаемые</span>
+                                            </div>
+                                        </td>
+                                        <td>YM-32109</td>
+                                        <td>₽2 900</td>
+                                        <td>4.2</td>
+                                        <td>180</td>
+                                        <td>Оценка: 650 шт/мес</td>
+                                        <td>3 из 5</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-chart-line"></i> Анализ
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Ключевые слова -->
+            <div id="keywords-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-key"></i> Ключевые слова</h2>
+                    <p class="page-description">Анализ эффективности ключевых слов для продвижения на маркетплейсах</p>
+                </div>
+                
+                <!-- Поиск и фильтры -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div class="md:col-span-2">
+                                <label class="form-label">Поиск по ключевым словам</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Введите ключевое слово">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-search"></i> Найти
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="form-label">Маркетплейс</label>
+                                <select class="form-control">
+                                    <option>Все маркетплейсы</option>
+                                    <option>Wildberries</option>
+                                    <option>Ozon</option>
+                                    <option>Яндекс.Маркет</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Сортировка</label>
+                                <select class="form-control">
+                                    <option>По умолчанию</option>
+                                    <option>По частоте</option>
+                                    <option>По позиции</option>
+                                    <option>По CTR</option>
+                                    <option>По конверсии</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Сводка по ключевым словам -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Всего слов</h3>
+                            <p class="stat-value">1 240</p>
+                            <p class="stat-desc">+120 за месяц</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>В топ-10</h3>
+                            <p class="stat-value">340</p>
+                            <p class="stat-desc">25% от общего</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Средний CTR</h3>
+                            <p class="stat-value">4.2%</p>
+                            <p class="stat-desc">+0.3% за месяц</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Конверсия</h3>
+                            <p class="stat-value">2.8%</p>
+                            <p class="stat-desc">Стабильный уровень</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таблица ключевых слов -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Ключевые слова</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-plus"></i> Добавить
+                            </button>
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-download"></i> Экспорт
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Ключевое слово</th>
+                                        <th>Маркетплейс</th>
+                                        <th>Позиция</th>
+                                        <th>Частота</th>
+                                        <th>Показы</th>
+                                        <th>Клики</th>
+                                        <th>CTR</th>
+                                        <th>Конверсия</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>беспроводные наушники</td>
+                                        <td>Wildberries</td>
+                                        <td>3</td>
+                                        <td>12 500</td>
+                                        <td>8 750</td>
+                                        <td>368</td>
+                                        <td>4.2%</td>
+                                        <td>3.0%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>наушники bluetooth</td>
+                                        <td>Ozon</td>
+                                        <td>7</td>
+                                        <td>9 800</td>
+                                        <td>6 860</td>
+                                        <td>274</td>
+                                        <td>4.0%</td>
+                                        <td>2.5%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>наушники с шумоподавлением</td>
+                                        <td>Яндекс.Маркет</td>
+                                        <td>12</td>
+                                        <td>5 600</td>
+                                        <td>3 920</td>
+                                        <td>157</td>
+                                        <td>4.0%</td>
+                                        <td>2.8%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>спортивные наушники</td>
+                                        <td>Wildberries</td>
+                                        <td>18</td>
+                                        <td>3 400</td>
+                                        <td>2 380</td>
+                                        <td>95</td>
+                                        <td>4.0%</td>
+                                        <td>2.2%</td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Контент -->
+            <div id="content-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-newspaper"></i> Контент</h2>
+                    <p class="page-description">Анализ эффективности контента товаров на маркетплейсах</p>
+                </div>
+                
+                <!-- Кнопки действий -->
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Создать контент
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-file-import"></i> Импорт описаний
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-magic"></i> Оптимизация контента
+                    </button>
+                </div>
+                
+                <!-- Сводка по контенту -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Всего товаров</h3>
+                            <p class="stat-value">2 450</p>
+                            <p class="stat-desc">+150 за месяц</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>С оптимизацией</h3>
+                            <p class="stat-value">1 840</p>
+                            <p class="stat-desc">75% от общего</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>Средний рейтинг</h3>
+                            <p class="stat-value">4.3/5</p>
+                            <p class="stat-desc">+0.2 за месяц</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-card">
+                            <h3>С отзывами</h3>
+                            <p class="stat-value">1 920</p>
+                            <p class="stat-desc">78% товаров</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтры -->
+                <div class="card mt-6">
+                    <div class="card-body">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                            <div>
+                                <label class="form-label">Категория</label>
+                                <select class="form-control">
+                                    <option>Все категории</option>
+                                    <option>Электроника</option>
+                                    <option>Одежда</option>
+                                    <option>Дом и сад</option>
+                                    <option>Красота</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Маркетплейс</label>
+                                <select class="form-control">
+                                    <option>Все маркетплейсы</option>
+                                    <option>Wildberries</option>
+                                    <option>Ozon</option>
+                                    <option>Яндекс.Маркет</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Рейтинг</label>
+                                <select class="form-control">
+                                    <option>Все</option>
+                                    <option>5 звезд</option>
+                                    <option>4 звезды и выше</option>
+                                    <option>3 звезды и выше</option>
+                                    <option>Ниже 3 звезд</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Наличие отзывов</label>
+                                <select class="form-control">
+                                    <option>Все</option>
+                                    <option>С отзывами</option>
+                                    <option>Без отзывов</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button class="btn btn-primary w-full">
+                                    <i class="fas fa-filter"></i> Фильтровать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таблица контента -->
+                <div class="card mt-6">
+                    <div class="card-header">
+                        <h3>Контент товаров</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">
+                                <i class="fas fa-sync"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Товар</th>
+                                        <th>Артикул</th>
+                                        <th>Маркетплейс</th>
+                                        <th>Рейтинг</th>
+                                        <th>Отзывы</th>
+                                        <th>Оптимизация</th>
+                                        <th>Качество фото</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Беспроводные наушники Bluetooth</span>
+                                            </div>
+                                        </td>
+                                        <td>WB-12345</td>
+                                        <td>Wildberries</td>
+                                        <td>4.8</td>
+                                        <td>124</td>
+                                        <td><span class="status-badge status-success">Выполнена</span></td>
+                                        <td><span class="status-badge status-success">Высокое</span></td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-magic"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Смартфон XYZ Pro</span>
+                                            </div>
+                                        </td>
+                                        <td>OZ-67890</td>
+                                        <td>Ozon</td>
+                                        <td>4.6</td>
+                                        <td>89</td>
+                                        <td><span class="status-badge status-warning">Требуется</span></td>
+                                        <td><span class="status-badge status-success">Высокое</span></td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-magic"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <img src="https://placehold.co/40" alt="Товар" class="product-image">
+                                                <span>Умная колонка с голосовым помощником</span>
+                                            </div>
+                                        </td>
+                                        <td>YM-54321</td>
+                                        <td>Яндекс.Маркет</td>
+                                        <td>4.7</td>
+                                        <td>67</td>
+                                        <td><span class="status-badge status-success">Выполнена</span></td>
+                                        <td><span class="status-badge status-warning">Среднее</span></td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-magic"></i>
+                                                </button>
+                                                <button class="btn-icon btn-sm">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Модели -->
+            <div id="models-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-robot"></i> Управление ML-Моделями</h2>
+                    <p class="page-description">Подробная информация о ваших ML-моделях, их статусе, метриках и
+                        возможностях управления.</p>
+                </div>
+
+                <div class="models-grid">
+                    <!-- Карточка модели 1 -->
+                    <div class="card model-card">
+                        <div class="model-header">
+                            <h3 class="model-title">Модель предсказания CTR</h3>
+                            <span class="status-badge status-success"><i class="fas fa-check-circle"></i> Обучена</span>
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Точность (R²):</span>
+                                <span class="detail-value">92%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Последнее обучение:</span>
+                                <span class="detail-value">15.03.2024, 10:30</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Тип данных:</span>
+                                <span class="detail-value">CTR, Клики, Показы</span>
+                            </div>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-outline"><i class="fas fa-sync"></i> Переобучить</button>
+                            <button class="btn btn-outline"><i class="fas fa-chart-line"></i> Детали</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка модели 2 -->
+                    <div class="card model-card">
+                        <div class="model-header">
+                            <h3 class="model-title">Модель оптимизации бюджета</h3>
+                            <span class="status-badge status-warning"><i class="fas fa-cog fa-spin"></i>
+                                Обучается</span>
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Прогресс:</span>
+                                <span class="detail-value">75%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">ETA:</span>
+                                <span class="detail-value">~15 минут</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Тип данных:</span>
+                                <span class="detail-value">Расходы, Выручка, Конверсии</span>
+                            </div>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-outline btn-warning"><i class="fas fa-stop"></i> Остановить</button>
+                            <button class="btn btn-outline"><i class="fas fa-history"></i> Логи</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка модели 3 (Пример) -->
+                    <div class="card model-card">
+                        <div class="model-header">
+                            <h3 class="model-title">Модель прогноза продаж</h3>
+                            <span class="status-badge status-danger"><i class="fas fa-exclamation-circle"></i>
+                                Ошибка</span>
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ошибка:</span>
+                                <span class="detail-value">Недостаточно данных</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Последняя попытка:</span>
+                                <span class="detail-value">14.03.2024, 16:45</span>
+                            </div>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-outline"><i class="fas fa-play"></i> Запустить</button>
+                            <button class="btn btn-outline"><i class="fas fa-bug"></i> Диагностика</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Отчеты -->
+            <div id="reports-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-file-alt"></i> Генерация отчетов</h2>
+                    <p class="page-description">Создавайте, просматривайте и экспортируйте аналитические отчеты по вашим
+                        рекламным кампаниям.</p>
+                </div>
+
+                <div class="reports-filters">
+                    <div class="filter-group">
+                        <label for="report-period"><i class="fas fa-calendar-alt"></i> Период:</label>
+                        <select id="report-period" class="form-control">
+                            <option>Последние 7 дней</option>
+                            <option selected>Последние 30 дней</option>
+                            <option>Текущий месяц</option>
+                            <option>Прошлый месяц</option>
+                            <option>Произвольный период</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="report-platform"><i class="fas fa-store"></i> Платформа:</label>
+                        <select id="report-platform" class="form-control">
+                            <option>Все платформы</option>
+                            <option>Wildberries</option>
+                            <option>Ozon</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary"><i class="fas fa-sync"></i> Обновить</button>
+                </div>
+
+                <div class="reports-grid">
+                    <!-- Карточка отчета 1 -->
+                    <div class="card report-card">
+                        <div class="report-header">
+                            <div class="report-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="report-info">
+                                <h3 class="report-title">Еженедельный обзор</h3>
+                                <p class="report-meta">ID: RPT-2023-43W</p>
+                            </div>
+                            <span class="status-badge status-success"><i class="fas fa-check"></i> Готов</span>
+                        </div>
+                        <div class="report-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Период:</span>
+                                <span class="detail-value">2023-10-23 - 2023-10-29</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Платформы:</span>
+                                <span class="detail-value">Wildberries, Ozon</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Создан:</span>
+                                <span class="detail-value">30.10.2023, 09:15</span>
+                            </div>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn btn-outline"><i class="fas fa-eye"></i> Просмотр</button>
+                            <button class="btn btn-primary"><i class="fas fa-download"></i> PDF</button>
+                            <button class="btn btn-success"><i class="fas fa-file-excel"></i> Excel</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка отчета 2 -->
+                    <div class="card report-card">
+                        <div class="report-header">
+                            <div class="report-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="report-info">
+                                <h3 class="report-title">Анализ кампаний</h3>
+                                <p class="report-meta">ID: RPT-2023-42C</p>
+                            </div>
+                            <span class="status-badge status-success"><i class="fas fa-check"></i> Готов</span>
+                        </div>
+                        <div class="report-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Период:</span>
+                                <span class="detail-value">2023-10-16 - 2023-10-22</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Платформы:</span>
+                                <span class="detail-value">Wildberries</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Создан:</span>
+                                <span class="detail-value">23.10.2023, 14:30</span>
+                            </div>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn btn-outline"><i class="fas fa-eye"></i> Просмотр</button>
+                            <button class="btn btn-primary"><i class="fas fa-download"></i> PDF</button>
+                            <button class="btn btn-success"><i class="fas fa-file-excel"></i> Excel</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка отчета 3 -->
+                    <div class="card report-card">
+                        <div class="report-header">
+                            <div class="report-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="report-info">
+                                <h3 class="report-title">Финансовый отчет</h3>
+                                <p class="report-meta">ID: RPT-2023-Q3F</p>
+                            </div>
+                            <span class="status-badge status-warning"><i class="fas fa-cog fa-spin"></i>
+                                Генерация</span>
+                        </div>
+                        <div class="report-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Период:</span>
+                                <span class="detail-value">Q3 2023</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Платформы:</span>
+                                <span class="detail-value">Все</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Начат:</span>
+                                <span class="detail-value">01.11.2023, 10:00</span>
+                            </div>
+                        </div>
+                        <div class="report-actions">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%;"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                            <button class="btn btn-outline" disabled><i class="fas fa-stop"></i> Отменить</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка отчета 4 -->
+                    <div class="card report-card">
+                        <div class="report-header">
+                            <div class="report-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="report-info">
+                                <h3 class="report-title">Кастомный отчет</h3>
+                                <p class="report-meta">ID: RPT-2023-CUST</p>
+                            </div>
+                            <span class="status-badge status-danger"><i class="fas fa-exclamation-circle"></i>
+                                Ошибка</span>
+                        </div>
+                        <div class="report-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Период:</span>
+                                <span class="detail-value">2023-09-01 - 2023-09-30</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Платформы:</span>
+                                <span class="detail-value">Ozon</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Ошибка:</span>
+                                <span class="detail-value">Нет данных</span>
+                            </div>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn btn-outline"><i class="fas fa-redo"></i> Повторить</button>
+                            <button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-header">
+                        <h3><i class="fas fa-plus-circle"></i> Создать новый отчет</h3>
+                    </div>
+                    <div class="card">
+                        <form class="report-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="report-type">Тип отчета:</label>
+                                    <select id="report-type" class="form-control">
+                                        <option>Еженедельный обзор</option>
+                                        <option>Анализ кампаний</option>
+                                        <option>Финансовый отчет</option>
+                                        <option>Кастомный отчет</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="custom-period">Период:</label>
+                                    <input type="text" id="custom-period" class="form-control"
+                                        placeholder="Выберите период">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Платформы:</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" checked> Wildberries
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" checked> Ozon
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox"> Google Analytics
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-file-medical"></i>
+                                    Сгенерировать отчет</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница: Настройки -->
+            <div id="settings-page" class="page">
+                <div class="page-header">
+                    <h2><i class="fas fa-cog"></i> Настройки приложения</h2>
+                    <p class="page-description">Управляйте настройками профиля, уведомлений и интеграций.</p>
+                </div>
+
+                <div class="settings-grid">
+                    <!-- Карточка профиля -->
+                    <div class="card settings-card">
+                        <div class="settings-header">
+                            <div class="settings-icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="settings-info">
+                                <h3 class="settings-title">Профиль пользователя</h3>
+                                <p class="settings-desc">Управление основной информацией вашего аккаунта</p>
+                            </div>
+                        </div>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label for="username" class="form-label">
+                                    <i class="fas fa-signature"></i> Имя пользователя
+                                </label>
+                                <input type="text" id="username" class="form-control" value="Администратор">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i> Email
+                                </label>
+                                <input type="email" id="email" class="form-control" value="admin@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="timezone" class="form-label">
+                                    <i class="fas fa-globe"></i> Часовой пояс
+                                </label>
+                                <select id="timezone" class="form-control">
+                                    <option>GMT+03:00 Москва, Санкт-Петербург</option>
+                                    <option>GMT+02:00 Калининград</option>
+                                    <option>GMT+04:00 Самара, Удмуртия</option>
+                                    <option>GMT+05:00 Екатеринбург</option>
+                                    <option>GMT+06:00 Омск</option>
+                                    <option>GMT+07:00 Красноярск</option>
+                                    <option>GMT+08:00 Иркутск</option>
+                                    <option>GMT+09:00 Якутск</option>
+                                    <option>GMT+10:00 Владивосток</option>
+                                    <option>GMT+11:00 Магадан</option>
+                                    <option>GMT+12:00 Камчатка</option>
+                                </select>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Сохранить изменения
+                                </button>
+                                <button type="button" class="btn btn-outline">
+                                    <i class="fas fa-key"></i> Сменить пароль
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Карточка уведомлений -->
+                    <div class="card settings-card">
+                        <div class="settings-header">
+                            <div class="settings-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="settings-info">
+                                <h3 class="settings-title">Уведомления</h3>
+                                <p class="settings-desc">Настройка получения уведомлений</p>
+                            </div>
+                        </div>
+                        <div class="settings-options">
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">Email-уведомления</span>
+                                    <span class="option-desc">Получать уведомления на почту</span>
+                                </div>
+                                <div class="option-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">Push-уведомления</span>
+                                    <span class="option-desc">Всплывающие уведомления в браузере</span>
+                                </div>
+                                <div class="option-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">SMS-уведомления</span>
+                                    <span class="option-desc">Критические уведомления по SMS</span>
+                                </div>
+                                <div class="option-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">Уведомления о критических изменениях</span>
+                                    <span class="option-desc">Оповещения о резких изменениях метрик</span>
+                                </div>
+                                <div class="option-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка интеграций -->
+                    <div class="card settings-card">
+                        <div class="settings-header">
+                            <div class="settings-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div class="settings-info">
+                                <h3 class="settings-title">Интеграции</h3>
+                                <p class="settings-desc">Подключение внешних сервисов</p>
+                            </div>
+                        </div>
+                        <div class="integrations-list">
+                            <div class="integration-item">
+                                <div class="integration-info">
+                                    <div class="integration-logo">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <div class="integration-details">
+                                        <span class="integration-name">Google Analytics</span>
+                                        <span class="integration-status status-connected">
+                                            <i class="fas fa-circle"></i> Подключено
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="integration-actions">
+                                    <button class="btn btn-sm btn-outline">
+                                        <i class="fas fa-cog"></i> Настроить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="integration-item">
+                                <div class="integration-info">
+                                    <div class="integration-logo">
+                                        <i class="fab fa-slack"></i>
+                                    </div>
+                                    <div class="integration-details">
+                                        <span class="integration-name">Slack</span>
+                                        <span class="integration-status status-disconnected">
+                                            <i class="fas fa-circle"></i> Не подключено
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="integration-actions">
+                                    <button class="btn btn-sm btn-success">
+                                        <i class="fas fa-link"></i> Подключить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="integration-item">
+                                <div class="integration-info">
+                                    <div class="integration-logo">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="integration-details">
+                                        <span class="integration-name">API Wildberries</span>
+                                        <span class="integration-status status-connected">
+                                            <i class="fas fa-circle"></i> Подключено
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="integration-actions">
+                                    <button class="btn btn-sm btn-outline">
+                                        <i class="fas fa-sync"></i> Обновить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="integration-item">
+                                <div class="integration-info">
+                                    <div class="integration-logo">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="integration-details">
+                                        <span class="integration-name">API Ozon</span>
+                                        <span class="integration-status status-connected">
+                                            <i class="fas fa-circle"></i> Подключено
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="integration-actions">
+                                    <button class="btn btn-sm btn-outline">
+                                        <i class="fas fa-sync"></i> Обновить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка безопасности -->
+                    <div class="card settings-card">
+                        <div class="settings-header">
+                            <div class="settings-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="settings-info">
+                                <h3 class="settings-title">Безопасность</h3>
+                                <p class="settings-desc">Управление безопасностью аккаунта</p>
+                            </div>
+                        </div>
+                        <div class="security-options">
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">Двухфакторная аутентификация</span>
+                                    <span class="option-desc">Дополнительный уровень защиты аккаунта</span>
+                                </div>
+                                <div class="option-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">Список активных сессий</span>
+                                    <span class="option-desc">Просмотр и управление активными входами</span>
+                                </div>
+                                <div class="option-action">
+                                    <button class="btn btn-sm btn-outline">
+                                        <i class="fas fa-list"></i> Просмотреть
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-info">
+                                    <span class="option-label">История входов</span>
+                                    <span class="option-desc">Последние попытки входа в систему</span>
+                                </div>
+                                <div class="option-action">
+                                    <button class="btn btn-sm btn-outline">
+                                        <i class="fas fa-history"></i> История
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Конец page-container -->
+    </div> <!-- Конец main-content -->
+
+    <!-- Модальное окно для полноэкранного режима -->
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <div class="fullscreen-content">
+            <div class="fullscreen-header">
+                <h3 id="fullscreen-title">График</h3>
+                <div class="fullscreen-actions">
+                    <button class="btn btn-outline" id="download-fullscreen-chart"><i class="fas fa-download"></i>
+                        Скачать</button>
+                    <button class="btn btn-outline" id="close-fullscreen"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div id="fullscreen-chart-container" class="fullscreen-chart-container"></div>
+        </div>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <!-- Добавим скрипт проверки авторизации в начало -->
+    <script>
+        // Простая проверка авторизации при загрузке index.html
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('isAuthenticated') !== 'true') {
+                // Если не авторизован, перенаправляем на страницу входа
+                window.location.href = 'auth.html';
+            }
+            // Если авторизован, позволим остальному коду загрузиться и выполниться
+        });
+    </script>
+    <script src="js/auth_check.js"></script> <!-- Или встроить проверку прямо в этот тег -->
+    <script src="js/main.js"></script>
+    <script src="js/ml_charts.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/charts.js"></script>
+
+    <!-- Добавим обработчик выхода в один из ваших JS файлов (например, main.js) или прямо здесь -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Повторная проверка на всякий случай, если DOMContentLoaded сработал раньше
+            if (localStorage.getItem('isAuthenticated') !== 'true') {
+                window.location.href = 'auth.html';
+                return; // Останавливаем дальнейшее выполнение скриптов на этой странице
+            }
+
+            // Обработчик кнопки выхода
+            const logoutBtn = document.getElementById('logout-btn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function () {
+                    if (confirm('Вы уверены, что хотите выйти?')) {
+                        // Очищаем данные авторизации
+                        localStorage.removeItem('isAuthenticated');
+                        localStorage.removeItem('currentUser');
+
+                        // Перенаправляем на страницу входа
+                        window.location.href = 'auth.html';
+
+                        console.log('Пользователь вышел из системы');
+                    }
+                });
+            }
+
+            // Если пользователь авторизован, запускаем инициализацию приложения
+            // Это можно также поместить в auth_check.js или в конец main.js
+            if (typeof updateAllData === 'function') {
+                console.log('Инициализация данных дашборда...');
+                updateAllData('month');
+            }
+            if (typeof createMLCharts === 'function') {
+                console.log('Инициализация ML-графиков...');
+                setTimeout(createMLCharts, 200);
+            }
+        });
+    </script>
+</body>
+
+</html>

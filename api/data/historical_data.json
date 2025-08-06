@@ -1,0 +1,4058 @@
+[
+  {
+    "date": "2023-01-01",
+    "spend": 25945.51,
+    "impressions": 1692,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 930.18
+  },
+  {
+    "date": "2023-01-02",
+    "spend": 24995.17,
+    "impressions": 1661,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 969.04
+  },
+  {
+    "date": "2023-01-03",
+    "spend": 25844.69,
+    "impressions": 1821,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 1836.64
+  },
+  {
+    "date": "2023-01-04",
+    "spend": 23777.68,
+    "impressions": 1718,
+    "clicks": 47,
+    "conversions": 0,
+    "revenue": 2163.57
+  },
+  {
+    "date": "2023-01-05",
+    "spend": 25145.16,
+    "impressions": 1852,
+    "clicks": 53,
+    "conversions": 0,
+    "revenue": 2069.2
+  },
+  {
+    "date": "2023-01-06",
+    "spend": 22933.85,
+    "impressions": 1671,
+    "clicks": 45,
+    "conversions": 0,
+    "revenue": 1518.22
+  },
+  {
+    "date": "2023-01-07",
+    "spend": 18584.57,
+    "impressions": 1314,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 920.23
+  },
+  {
+    "date": "2023-01-08",
+    "spend": 18849.4,
+    "impressions": 1322,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 1602.64
+  },
+  {
+    "date": "2023-01-09",
+    "spend": 17509.71,
+    "impressions": 1295,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 1460.31
+  },
+  {
+    "date": "2023-01-10",
+    "spend": 19276.37,
+    "impressions": 1487,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1707.86
+  },
+  {
+    "date": "2023-01-11",
+    "spend": 23309.57,
+    "impressions": 1729,
+    "clicks": 47,
+    "conversions": 0,
+    "revenue": 2116.4
+  },
+  {
+    "date": "2023-01-12",
+    "spend": 26720.0,
+    "impressions": 2098,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 1176.81
+  },
+  {
+    "date": "2023-01-13",
+    "spend": 28251.11,
+    "impressions": 2149,
+    "clicks": 57,
+    "conversions": 0,
+    "revenue": 2748.49
+  },
+  {
+    "date": "2023-01-14",
+    "spend": 27023.14,
+    "impressions": 1982,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 1716.63
+  },
+  {
+    "date": "2023-01-15",
+    "spend": 26517.86,
+    "impressions": 2151,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 866.17
+  },
+  {
+    "date": "2023-01-16",
+    "spend": 26655.86,
+    "impressions": 2084,
+    "clicks": 44,
+    "conversions": 0,
+    "revenue": 1173.95
+  },
+  {
+    "date": "2023-01-17",
+    "spend": 27765.74,
+    "impressions": 2241,
+    "clicks": 52,
+    "conversions": 0,
+    "revenue": 2675.74
+  },
+  {
+    "date": "2023-01-18",
+    "spend": 31272.8,
+    "impressions": 2498,
+    "clicks": 65,
+    "conversions": 1,
+    "revenue": 1611.14
+  },
+  {
+    "date": "2023-01-19",
+    "spend": 32050.26,
+    "impressions": 2632,
+    "clicks": 72,
+    "conversions": 1,
+    "revenue": 1904.89
+  },
+  {
+    "date": "2023-01-20",
+    "spend": 31416.37,
+    "impressions": 2895,
+    "clicks": 77,
+    "conversions": 1,
+    "revenue": 2030.04
+  },
+  {
+    "date": "2023-01-21",
+    "spend": 29173.06,
+    "impressions": 2707,
+    "clicks": 65,
+    "conversions": 1,
+    "revenue": 2383.52
+  },
+  {
+    "date": "2023-01-22",
+    "spend": 23899.07,
+    "impressions": 2218,
+    "clicks": 48,
+    "conversions": 0,
+    "revenue": 1411.56
+  },
+  {
+    "date": "2023-01-23",
+    "spend": 24602.17,
+    "impressions": 2303,
+    "clicks": 50,
+    "conversions": 0,
+    "revenue": 1215.43
+  },
+  {
+    "date": "2023-01-24",
+    "spend": 24154.09,
+    "impressions": 2182,
+    "clicks": 51,
+    "conversions": 0,
+    "revenue": 2450.81
+  },
+  {
+    "date": "2023-01-25",
+    "spend": 23541.64,
+    "impressions": 1999,
+    "clicks": 53,
+    "conversions": 0,
+    "revenue": 2232.08
+  },
+  {
+    "date": "2023-01-26",
+    "spend": 26593.85,
+    "impressions": 2305,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 1603.21
+  },
+  {
+    "date": "2023-01-27",
+    "spend": 25666.83,
+    "impressions": 2384,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 2639.64
+  },
+  {
+    "date": "2023-01-28",
+    "spend": 22964.25,
+    "impressions": 2073,
+    "clicks": 49,
+    "conversions": 0,
+    "revenue": 1154.61
+  },
+  {
+    "date": "2023-01-29",
+    "spend": 18991.75,
+    "impressions": 1652,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 1721.07
+  },
+  {
+    "date": "2023-01-30",
+    "spend": 18680.02,
+    "impressions": 1648,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1932.88
+  },
+  {
+    "date": "2023-01-31",
+    "spend": 17400.91,
+    "impressions": 1623,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 1828.98
+  },
+  {
+    "date": "2023-02-01",
+    "spend": 21067.16,
+    "impressions": 1944,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 1025.45
+  },
+  {
+    "date": "2023-02-02",
+    "spend": 23074.35,
+    "impressions": 1959,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 2438.05
+  },
+  {
+    "date": "2023-02-03",
+    "spend": 20006.09,
+    "impressions": 1754,
+    "clicks": 48,
+    "conversions": 0,
+    "revenue": 2268.32
+  },
+  {
+    "date": "2023-02-04",
+    "spend": 21569.63,
+    "impressions": 1824,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 1037.81
+  },
+  {
+    "date": "2023-02-05",
+    "spend": 19533.71,
+    "impressions": 1592,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1537.22
+  },
+  {
+    "date": "2023-02-06",
+    "spend": 25074.05,
+    "impressions": 2065,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 1246.58
+  },
+  {
+    "date": "2023-02-07",
+    "spend": 26846.22,
+    "impressions": 2207,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 1384.77
+  },
+  {
+    "date": "2023-02-08",
+    "spend": 29413.43,
+    "impressions": 2371,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 3543.42
+  },
+  {
+    "date": "2023-02-09",
+    "spend": 30079.99,
+    "impressions": 2325,
+    "clicks": 63,
+    "conversions": 1,
+    "revenue": 2025.33
+  },
+  {
+    "date": "2023-02-10",
+    "spend": 29607.73,
+    "impressions": 2273,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 2461.7
+  },
+  {
+    "date": "2023-02-11",
+    "spend": 26904.15,
+    "impressions": 1984,
+    "clicks": 46,
+    "conversions": 0,
+    "revenue": 2242.75
+  },
+  {
+    "date": "2023-02-12",
+    "spend": 23163.87,
+    "impressions": 1799,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 2048.35
+  },
+  {
+    "date": "2023-02-13",
+    "spend": 25007.7,
+    "impressions": 1939,
+    "clicks": 43,
+    "conversions": 0,
+    "revenue": 1707.66
+  },
+  {
+    "date": "2023-02-14",
+    "spend": 28475.34,
+    "impressions": 2129,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 2877.41
+  },
+  {
+    "date": "2023-02-15",
+    "spend": 29482.48,
+    "impressions": 2190,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 1206.16
+  },
+  {
+    "date": "2023-02-16",
+    "spend": 27500.63,
+    "impressions": 1991,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 1161.2
+  },
+  {
+    "date": "2023-02-17",
+    "spend": 26649.03,
+    "impressions": 1826,
+    "clicks": 49,
+    "conversions": 0,
+    "revenue": 1349.87
+  },
+  {
+    "date": "2023-02-18",
+    "spend": 22965.05,
+    "impressions": 1570,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1508.12
+  },
+  {
+    "date": "2023-02-19",
+    "spend": 22076.77,
+    "impressions": 1508,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1096.68
+  },
+  {
+    "date": "2023-02-20",
+    "spend": 21947.3,
+    "impressions": 1540,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 711.98
+  },
+  {
+    "date": "2023-02-21",
+    "spend": 23085.63,
+    "impressions": 1639,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 1167.66
+  },
+  {
+    "date": "2023-02-22",
+    "spend": 27460.76,
+    "impressions": 2040,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 3224.78
+  },
+  {
+    "date": "2023-02-23",
+    "spend": 32604.0,
+    "impressions": 2547,
+    "clicks": 73,
+    "conversions": 1,
+    "revenue": 2212.51
+  },
+  {
+    "date": "2023-02-24",
+    "spend": 32767.07,
+    "impressions": 2515,
+    "clicks": 70,
+    "conversions": 1,
+    "revenue": 2766.95
+  },
+  {
+    "date": "2023-02-25",
+    "spend": 29473.03,
+    "impressions": 2380,
+    "clicks": 60,
+    "conversions": 1,
+    "revenue": 2245.86
+  },
+  {
+    "date": "2023-02-26",
+    "spend": 27501.95,
+    "impressions": 2260,
+    "clicks": 54,
+    "conversions": 1,
+    "revenue": 1875.71
+  },
+  {
+    "date": "2023-02-27",
+    "spend": 29421.43,
+    "impressions": 2377,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 1535.06
+  },
+  {
+    "date": "2023-02-28",
+    "spend": 30998.63,
+    "impressions": 2497,
+    "clicks": 65,
+    "conversions": 1,
+    "revenue": 3774.2
+  },
+  {
+    "date": "2023-03-01",
+    "spend": 38764.84,
+    "impressions": 3200,
+    "clicks": 88,
+    "conversions": 1,
+    "revenue": 3767.28
+  },
+  {
+    "date": "2023-03-02",
+    "spend": 39251.68,
+    "impressions": 3202,
+    "clicks": 92,
+    "conversions": 1,
+    "revenue": 2157.55
+  },
+  {
+    "date": "2023-03-03",
+    "spend": 36964.15,
+    "impressions": 3093,
+    "clicks": 86,
+    "conversions": 1,
+    "revenue": 4226.3
+  },
+  {
+    "date": "2023-03-04",
+    "spend": 34587.15,
+    "impressions": 2797,
+    "clicks": 72,
+    "conversions": 1,
+    "revenue": 2300.42
+  },
+  {
+    "date": "2023-03-05",
+    "spend": 29724.92,
+    "impressions": 2590,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 3220.87
+  },
+  {
+    "date": "2023-03-06",
+    "spend": 32022.47,
+    "impressions": 2816,
+    "clicks": 68,
+    "conversions": 1,
+    "revenue": 3468.2
+  },
+  {
+    "date": "2023-03-07",
+    "spend": 36641.34,
+    "impressions": 3219,
+    "clicks": 83,
+    "conversions": 1,
+    "revenue": 4512.37
+  },
+  {
+    "date": "2023-03-08",
+    "spend": 40037.69,
+    "impressions": 3467,
+    "clicks": 100,
+    "conversions": 2,
+    "revenue": 5898.0
+  },
+  {
+    "date": "2023-03-09",
+    "spend": 40946.89,
+    "impressions": 3842,
+    "clicks": 119,
+    "conversions": 2,
+    "revenue": 4071.66
+  },
+  {
+    "date": "2023-03-10",
+    "spend": 40468.09,
+    "impressions": 3687,
+    "clicks": 112,
+    "conversions": 2,
+    "revenue": 2740.55
+  },
+  {
+    "date": "2023-03-11",
+    "spend": 39808.65,
+    "impressions": 4007,
+    "clicks": 108,
+    "conversions": 2,
+    "revenue": 6243.06
+  },
+  {
+    "date": "2023-03-12",
+    "spend": 35749.17,
+    "impressions": 3523,
+    "clicks": 86,
+    "conversions": 1,
+    "revenue": 4008.15
+  },
+  {
+    "date": "2023-03-13",
+    "spend": 37594.25,
+    "impressions": 3604,
+    "clicks": 88,
+    "conversions": 1,
+    "revenue": 2119.77
+  },
+  {
+    "date": "2023-03-14",
+    "spend": 40181.03,
+    "impressions": 3988,
+    "clicks": 102,
+    "conversions": 2,
+    "revenue": 5324.43
+  },
+  {
+    "date": "2023-03-15",
+    "spend": 44198.13,
+    "impressions": 4451,
+    "clicks": 120,
+    "conversions": 2,
+    "revenue": 4829.75
+  },
+  {
+    "date": "2023-03-16",
+    "spend": 49418.64,
+    "impressions": 4847,
+    "clicks": 137,
+    "conversions": 2,
+    "revenue": 8277.37
+  },
+  {
+    "date": "2023-03-17",
+    "spend": 48245.74,
+    "impressions": 4811,
+    "clicks": 127,
+    "conversions": 2,
+    "revenue": 7610.5
+  },
+  {
+    "date": "2023-03-18",
+    "spend": 42237.09,
+    "impressions": 4189,
+    "clicks": 100,
+    "conversions": 2,
+    "revenue": 6039.48
+  },
+  {
+    "date": "2023-03-19",
+    "spend": 42456.14,
+    "impressions": 4301,
+    "clicks": 99,
+    "conversions": 2,
+    "revenue": 4618.26
+  },
+  {
+    "date": "2023-03-20",
+    "spend": 40939.54,
+    "impressions": 3731,
+    "clicks": 88,
+    "conversions": 1,
+    "revenue": 2823.11
+  },
+  {
+    "date": "2023-03-21",
+    "spend": 40344.84,
+    "impressions": 3510,
+    "clicks": 89,
+    "conversions": 1,
+    "revenue": 2095.87
+  },
+  {
+    "date": "2023-03-22",
+    "spend": 43121.62,
+    "impressions": 3602,
+    "clicks": 101,
+    "conversions": 2,
+    "revenue": 4968.17
+  },
+  {
+    "date": "2023-03-23",
+    "spend": 44820.86,
+    "impressions": 3636,
+    "clicks": 108,
+    "conversions": 2,
+    "revenue": 6207.82
+  },
+  {
+    "date": "2023-03-24",
+    "spend": 45562.07,
+    "impressions": 3970,
+    "clicks": 115,
+    "conversions": 2,
+    "revenue": 7092.04
+  },
+  {
+    "date": "2023-03-25",
+    "spend": 39583.5,
+    "impressions": 3860,
+    "clicks": 101,
+    "conversions": 2,
+    "revenue": 3302.39
+  },
+  {
+    "date": "2023-03-26",
+    "spend": 37729.23,
+    "impressions": 3760,
+    "clicks": 91,
+    "conversions": 1,
+    "revenue": 3650.87
+  },
+  {
+    "date": "2023-03-27",
+    "spend": 40911.97,
+    "impressions": 3870,
+    "clicks": 91,
+    "conversions": 1,
+    "revenue": 3318.91
+  },
+  {
+    "date": "2023-03-28",
+    "spend": 44467.85,
+    "impressions": 3918,
+    "clicks": 100,
+    "conversions": 2,
+    "revenue": 4310.77
+  },
+  {
+    "date": "2023-03-29",
+    "spend": 49277.46,
+    "impressions": 4152,
+    "clicks": 117,
+    "conversions": 2,
+    "revenue": 4509.65
+  },
+  {
+    "date": "2023-03-30",
+    "spend": 52951.5,
+    "impressions": 4648,
+    "clicks": 139,
+    "conversions": 2,
+    "revenue": 3805.7
+  },
+  {
+    "date": "2023-03-31",
+    "spend": 50487.42,
+    "impressions": 4264,
+    "clicks": 118,
+    "conversions": 2,
+    "revenue": 4386.27
+  },
+  {
+    "date": "2023-04-01",
+    "spend": 43164.41,
+    "impressions": 3410,
+    "clicks": 88,
+    "conversions": 1,
+    "revenue": 5230.68
+  },
+  {
+    "date": "2023-04-02",
+    "spend": 36812.78,
+    "impressions": 2939,
+    "clicks": 69,
+    "conversions": 1,
+    "revenue": 4553.08
+  },
+  {
+    "date": "2023-04-03",
+    "spend": 38252.12,
+    "impressions": 3221,
+    "clicks": 73,
+    "conversions": 1,
+    "revenue": 1857.83
+  },
+  {
+    "date": "2023-04-04",
+    "spend": 40723.77,
+    "impressions": 3323,
+    "clicks": 79,
+    "conversions": 1,
+    "revenue": 3430.62
+  },
+  {
+    "date": "2023-04-05",
+    "spend": 43063.45,
+    "impressions": 3590,
+    "clicks": 92,
+    "conversions": 2,
+    "revenue": 2785.74
+  },
+  {
+    "date": "2023-04-06",
+    "spend": 40272.55,
+    "impressions": 3348,
+    "clicks": 87,
+    "conversions": 1,
+    "revenue": 4631.54
+  },
+  {
+    "date": "2023-04-07",
+    "spend": 38198.08,
+    "impressions": 3189,
+    "clicks": 78,
+    "conversions": 1,
+    "revenue": 4583.51
+  },
+  {
+    "date": "2023-04-08",
+    "spend": 32347.64,
+    "impressions": 2763,
+    "clicks": 60,
+    "conversions": 1,
+    "revenue": 2678.08
+  },
+  {
+    "date": "2023-04-09",
+    "spend": 29451.65,
+    "impressions": 2349,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 1120.1
+  },
+  {
+    "date": "2023-04-10",
+    "spend": 31488.9,
+    "impressions": 2508,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2332.27
+  },
+  {
+    "date": "2023-04-11",
+    "spend": 34497.36,
+    "impressions": 2934,
+    "clicks": 63,
+    "conversions": 1,
+    "revenue": 2170.17
+  },
+  {
+    "date": "2023-04-12",
+    "spend": 36534.01,
+    "impressions": 3253,
+    "clicks": 76,
+    "conversions": 1,
+    "revenue": 2830.77
+  },
+  {
+    "date": "2023-04-13",
+    "spend": 41311.81,
+    "impressions": 3678,
+    "clicks": 93,
+    "conversions": 2,
+    "revenue": 2475.78
+  },
+  {
+    "date": "2023-04-14",
+    "spend": 42641.82,
+    "impressions": 3870,
+    "clicks": 99,
+    "conversions": 2,
+    "revenue": 2817.42
+  },
+  {
+    "date": "2023-04-15",
+    "spend": 42021.32,
+    "impressions": 3659,
+    "clicks": 83,
+    "conversions": 1,
+    "revenue": 3187.35
+  },
+  {
+    "date": "2023-04-16",
+    "spend": 38388.45,
+    "impressions": 3394,
+    "clicks": 71,
+    "conversions": 1,
+    "revenue": 2085.13
+  },
+  {
+    "date": "2023-04-17",
+    "spend": 36760.47,
+    "impressions": 3336,
+    "clicks": 68,
+    "conversions": 1,
+    "revenue": 2074.99
+  },
+  {
+    "date": "2023-04-18",
+    "spend": 39559.24,
+    "impressions": 3526,
+    "clicks": 73,
+    "conversions": 1,
+    "revenue": 4539.16
+  },
+  {
+    "date": "2023-04-19",
+    "spend": 41380.01,
+    "impressions": 3606,
+    "clicks": 81,
+    "conversions": 1,
+    "revenue": 5302.71
+  },
+  {
+    "date": "2023-04-20",
+    "spend": 41690.19,
+    "impressions": 3490,
+    "clicks": 86,
+    "conversions": 1,
+    "revenue": 2731.27
+  },
+  {
+    "date": "2023-04-21",
+    "spend": 40068.98,
+    "impressions": 3598,
+    "clicks": 84,
+    "conversions": 1,
+    "revenue": 2339.01
+  },
+  {
+    "date": "2023-04-22",
+    "spend": 36736.07,
+    "impressions": 3475,
+    "clicks": 70,
+    "conversions": 1,
+    "revenue": 3173.65
+  },
+  {
+    "date": "2023-04-23",
+    "spend": 33247.13,
+    "impressions": 3276,
+    "clicks": 60,
+    "conversions": 1,
+    "revenue": 1561.62
+  },
+  {
+    "date": "2023-04-24",
+    "spend": 34890.41,
+    "impressions": 3259,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 2996.27
+  },
+  {
+    "date": "2023-04-25",
+    "spend": 37288.23,
+    "impressions": 3390,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 3784.56
+  },
+  {
+    "date": "2023-04-26",
+    "spend": 44501.68,
+    "impressions": 3956,
+    "clicks": 80,
+    "conversions": 1,
+    "revenue": 4922.01
+  },
+  {
+    "date": "2023-04-27",
+    "spend": 45634.23,
+    "impressions": 4145,
+    "clicks": 88,
+    "conversions": 2,
+    "revenue": 2679.88
+  },
+  {
+    "date": "2023-04-28",
+    "spend": 44440.14,
+    "impressions": 4484,
+    "clicks": 92,
+    "conversions": 2,
+    "revenue": 5884.12
+  },
+  {
+    "date": "2023-04-29",
+    "spend": 38378.19,
+    "impressions": 4314,
+    "clicks": 83,
+    "conversions": 1,
+    "revenue": 3666.77
+  },
+  {
+    "date": "2023-04-30",
+    "spend": 35499.44,
+    "impressions": 4377,
+    "clicks": 79,
+    "conversions": 1,
+    "revenue": 5091.41
+  },
+  {
+    "date": "2023-05-01",
+    "spend": 37141.17,
+    "impressions": 4511,
+    "clicks": 84,
+    "conversions": 1,
+    "revenue": 2323.07
+  },
+  {
+    "date": "2023-05-02",
+    "spend": 39289.45,
+    "impressions": 5037,
+    "clicks": 102,
+    "conversions": 2,
+    "revenue": 5930.82
+  },
+  {
+    "date": "2023-05-03",
+    "spend": 43774.48,
+    "impressions": 5544,
+    "clicks": 125,
+    "conversions": 2,
+    "revenue": 3743.5
+  },
+  {
+    "date": "2023-05-04",
+    "spend": 46617.08,
+    "impressions": 5385,
+    "clicks": 124,
+    "conversions": 2,
+    "revenue": 7777.38
+  },
+  {
+    "date": "2023-05-05",
+    "spend": 42817.51,
+    "impressions": 5022,
+    "clicks": 113,
+    "conversions": 2,
+    "revenue": 6663.11
+  },
+  {
+    "date": "2023-05-06",
+    "spend": 40490.64,
+    "impressions": 4492,
+    "clicks": 90,
+    "conversions": 2,
+    "revenue": 4670.53
+  },
+  {
+    "date": "2023-05-07",
+    "spend": 35122.45,
+    "impressions": 4069,
+    "clicks": 76,
+    "conversions": 1,
+    "revenue": 2395.71
+  },
+  {
+    "date": "2023-05-08",
+    "spend": 30573.01,
+    "impressions": 3732,
+    "clicks": 70,
+    "conversions": 1,
+    "revenue": 4728.49
+  },
+  {
+    "date": "2023-05-09",
+    "spend": 33349.77,
+    "impressions": 3540,
+    "clicks": 72,
+    "conversions": 1,
+    "revenue": 1729.71
+  },
+  {
+    "date": "2023-05-10",
+    "spend": 37681.33,
+    "impressions": 3953,
+    "clicks": 93,
+    "conversions": 2,
+    "revenue": 2803.12
+  },
+  {
+    "date": "2023-05-11",
+    "spend": 38353.8,
+    "impressions": 3711,
+    "clicks": 94,
+    "conversions": 2,
+    "revenue": 6358.27
+  },
+  {
+    "date": "2023-05-12",
+    "spend": 37787.79,
+    "impressions": 3255,
+    "clicks": 79,
+    "conversions": 1,
+    "revenue": 3364.1
+  },
+  {
+    "date": "2023-05-13",
+    "spend": 31206.97,
+    "impressions": 2809,
+    "clicks": 61,
+    "conversions": 1,
+    "revenue": 3006.93
+  },
+  {
+    "date": "2023-05-14",
+    "spend": 27350.32,
+    "impressions": 2328,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2111.39
+  },
+  {
+    "date": "2023-05-15",
+    "spend": 26904.88,
+    "impressions": 2313,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2160.8
+  },
+  {
+    "date": "2023-05-16",
+    "spend": 25137.91,
+    "impressions": 2064,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2405.41
+  },
+  {
+    "date": "2023-05-17",
+    "spend": 27828.41,
+    "impressions": 2066,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 1304.46
+  },
+  {
+    "date": "2023-05-18",
+    "spend": 29463.7,
+    "impressions": 2196,
+    "clicks": 54,
+    "conversions": 1,
+    "revenue": 1745.85
+  },
+  {
+    "date": "2023-05-19",
+    "spend": 28484.61,
+    "impressions": 2180,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 3049.4
+  },
+  {
+    "date": "2023-05-20",
+    "spend": 23558.44,
+    "impressions": 1958,
+    "clicks": 43,
+    "conversions": 0,
+    "revenue": 2067.44
+  },
+  {
+    "date": "2023-05-21",
+    "spend": 20374.74,
+    "impressions": 1798,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1870.93
+  },
+  {
+    "date": "2023-05-22",
+    "spend": 18929.41,
+    "impressions": 1635,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1709.19
+  },
+  {
+    "date": "2023-05-23",
+    "spend": 21572.46,
+    "impressions": 1905,
+    "clicks": 41,
+    "conversions": 0,
+    "revenue": 2156.1
+  },
+  {
+    "date": "2023-05-24",
+    "spend": 21721.17,
+    "impressions": 1851,
+    "clicks": 44,
+    "conversions": 0,
+    "revenue": 2680.32
+  },
+  {
+    "date": "2023-05-25",
+    "spend": 24053.27,
+    "impressions": 2148,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 1906.3
+  },
+  {
+    "date": "2023-05-26",
+    "spend": 21543.53,
+    "impressions": 2036,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 1884.11
+  },
+  {
+    "date": "2023-05-27",
+    "spend": 22700.87,
+    "impressions": 2282,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2217.27
+  },
+  {
+    "date": "2023-05-28",
+    "spend": 20961.15,
+    "impressions": 2008,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 2118.21
+  },
+  {
+    "date": "2023-05-29",
+    "spend": 17640.81,
+    "impressions": 1665,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 1517.12
+  },
+  {
+    "date": "2023-05-30",
+    "spend": 19345.24,
+    "impressions": 1943,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1274.99
+  },
+  {
+    "date": "2023-05-31",
+    "spend": 17603.87,
+    "impressions": 1731,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 1855.87
+  },
+  {
+    "date": "2023-06-01",
+    "spend": 21749.28,
+    "impressions": 1980,
+    "clicks": 42,
+    "conversions": 0,
+    "revenue": 2228.88
+  },
+  {
+    "date": "2023-06-02",
+    "spend": 20951.2,
+    "impressions": 1963,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 1144.73
+  },
+  {
+    "date": "2023-06-03",
+    "spend": 20047.61,
+    "impressions": 2012,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 1405.72
+  },
+  {
+    "date": "2023-06-04",
+    "spend": 20514.94,
+    "impressions": 2164,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 1609.97
+  },
+  {
+    "date": "2023-06-05",
+    "spend": 20973.01,
+    "impressions": 2200,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1169.03
+  },
+  {
+    "date": "2023-06-06",
+    "spend": 22513.42,
+    "impressions": 2081,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1371.02
+  },
+  {
+    "date": "2023-06-07",
+    "spend": 24083.07,
+    "impressions": 2207,
+    "clicks": 42,
+    "conversions": 0,
+    "revenue": 1892.19
+  },
+  {
+    "date": "2023-06-08",
+    "spend": 24058.59,
+    "impressions": 2135,
+    "clicks": 42,
+    "conversions": 0,
+    "revenue": 2495.48
+  },
+  {
+    "date": "2023-06-09",
+    "spend": 25299.38,
+    "impressions": 2434,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 1216.92
+  },
+  {
+    "date": "2023-06-10",
+    "spend": 20512.81,
+    "impressions": 1956,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 2058.23
+  },
+  {
+    "date": "2023-06-11",
+    "spend": 20959.56,
+    "impressions": 1882,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 1851.06
+  },
+  {
+    "date": "2023-06-12",
+    "spend": 21474.93,
+    "impressions": 1891,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 924.23
+  },
+  {
+    "date": "2023-06-13",
+    "spend": 22801.84,
+    "impressions": 1968,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 2306.81
+  },
+  {
+    "date": "2023-06-14",
+    "spend": 25199.91,
+    "impressions": 2172,
+    "clicks": 41,
+    "conversions": 0,
+    "revenue": 1565.34
+  },
+  {
+    "date": "2023-06-15",
+    "spend": 29064.38,
+    "impressions": 2621,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2856.16
+  },
+  {
+    "date": "2023-06-16",
+    "spend": 28275.04,
+    "impressions": 2393,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1655.35
+  },
+  {
+    "date": "2023-06-17",
+    "spend": 26665.52,
+    "impressions": 2392,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 983.16
+  },
+  {
+    "date": "2023-06-18",
+    "spend": 27271.23,
+    "impressions": 2504,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 1795.82
+  },
+  {
+    "date": "2023-06-19",
+    "spend": 23854.03,
+    "impressions": 2372,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 2221.53
+  },
+  {
+    "date": "2023-06-20",
+    "spend": 23845.88,
+    "impressions": 2540,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1627.52
+  },
+  {
+    "date": "2023-06-21",
+    "spend": 27778.78,
+    "impressions": 3136,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 3757.24
+  },
+  {
+    "date": "2023-06-22",
+    "spend": 30496.6,
+    "impressions": 3450,
+    "clicks": 66,
+    "conversions": 1,
+    "revenue": 3402.39
+  },
+  {
+    "date": "2023-06-23",
+    "spend": 29410.57,
+    "impressions": 3650,
+    "clicks": 69,
+    "conversions": 1,
+    "revenue": 2188.94
+  },
+  {
+    "date": "2023-06-24",
+    "spend": 28779.69,
+    "impressions": 3716,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 1625.98
+  },
+  {
+    "date": "2023-06-25",
+    "spend": 28554.89,
+    "impressions": 3505,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 1624.76
+  },
+  {
+    "date": "2023-06-26",
+    "spend": 25623.41,
+    "impressions": 3104,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2379.25
+  },
+  {
+    "date": "2023-06-27",
+    "spend": 28993.43,
+    "impressions": 3589,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 1666.13
+  },
+  {
+    "date": "2023-06-28",
+    "spend": 36342.2,
+    "impressions": 4320,
+    "clicks": 75,
+    "conversions": 1,
+    "revenue": 2080.22
+  },
+  {
+    "date": "2023-06-29",
+    "spend": 36039.5,
+    "impressions": 4068,
+    "clicks": 70,
+    "conversions": 1,
+    "revenue": 3264.6
+  },
+  {
+    "date": "2023-06-30",
+    "spend": 36845.13,
+    "impressions": 4161,
+    "clicks": 68,
+    "conversions": 1,
+    "revenue": 3109.13
+  },
+  {
+    "date": "2023-07-01",
+    "spend": 31300.3,
+    "impressions": 3287,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2509.01
+  },
+  {
+    "date": "2023-07-02",
+    "spend": 30989.37,
+    "impressions": 3155,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2862.54
+  },
+  {
+    "date": "2023-07-03",
+    "spend": 32804.26,
+    "impressions": 3254,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2637.46
+  },
+  {
+    "date": "2023-07-04",
+    "spend": 35793.19,
+    "impressions": 3579,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 2333.79
+  },
+  {
+    "date": "2023-07-05",
+    "spend": 40271.41,
+    "impressions": 3942,
+    "clicks": 70,
+    "conversions": 1,
+    "revenue": 3352.61
+  },
+  {
+    "date": "2023-07-06",
+    "spend": 43680.33,
+    "impressions": 4579,
+    "clicks": 86,
+    "conversions": 2,
+    "revenue": 4606.21
+  },
+  {
+    "date": "2023-07-07",
+    "spend": 41112.84,
+    "impressions": 4248,
+    "clicks": 79,
+    "conversions": 1,
+    "revenue": 3915.9
+  },
+  {
+    "date": "2023-07-08",
+    "spend": 37531.72,
+    "impressions": 3758,
+    "clicks": 63,
+    "conversions": 1,
+    "revenue": 1811.42
+  },
+  {
+    "date": "2023-07-09",
+    "spend": 33943.5,
+    "impressions": 3429,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 3086.62
+  },
+  {
+    "date": "2023-07-10",
+    "spend": 30997.12,
+    "impressions": 2951,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 1200.22
+  },
+  {
+    "date": "2023-07-11",
+    "spend": 29139.67,
+    "impressions": 2791,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2873.58
+  },
+  {
+    "date": "2023-07-12",
+    "spend": 27263.98,
+    "impressions": 2804,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 1657.23
+  },
+  {
+    "date": "2023-07-13",
+    "spend": 31286.07,
+    "impressions": 3041,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 2244.62
+  },
+  {
+    "date": "2023-07-14",
+    "spend": 27976.97,
+    "impressions": 2494,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2079.29
+  },
+  {
+    "date": "2023-07-15",
+    "spend": 24131.9,
+    "impressions": 2221,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 1011.54
+  },
+  {
+    "date": "2023-07-16",
+    "spend": 24397.25,
+    "impressions": 2253,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 2556.59
+  },
+  {
+    "date": "2023-07-17",
+    "spend": 25942.33,
+    "impressions": 2318,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 2430.15
+  },
+  {
+    "date": "2023-07-18",
+    "spend": 29607.28,
+    "impressions": 2622,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2950.72
+  },
+  {
+    "date": "2023-07-19",
+    "spend": 30941.04,
+    "impressions": 2694,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2320.33
+  },
+  {
+    "date": "2023-07-20",
+    "spend": 30966.66,
+    "impressions": 2680,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 1968.62
+  },
+  {
+    "date": "2023-07-21",
+    "spend": 29670.15,
+    "impressions": 2598,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 1349.69
+  },
+  {
+    "date": "2023-07-22",
+    "spend": 28240.34,
+    "impressions": 2656,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 2520.76
+  },
+  {
+    "date": "2023-07-23",
+    "spend": 25071.88,
+    "impressions": 2359,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1062.75
+  },
+  {
+    "date": "2023-07-24",
+    "spend": 26926.6,
+    "impressions": 2365,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1851.54
+  },
+  {
+    "date": "2023-07-25",
+    "spend": 28953.88,
+    "impressions": 2573,
+    "clicks": 41,
+    "conversions": 0,
+    "revenue": 1154.14
+  },
+  {
+    "date": "2023-07-26",
+    "spend": 33293.06,
+    "impressions": 2738,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2934.53
+  },
+  {
+    "date": "2023-07-27",
+    "spend": 33175.55,
+    "impressions": 2697,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2751.38
+  },
+  {
+    "date": "2023-07-28",
+    "spend": 32584.6,
+    "impressions": 2575,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 2523.09
+  },
+  {
+    "date": "2023-07-29",
+    "spend": 31213.12,
+    "impressions": 2454,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 2339.81
+  },
+  {
+    "date": "2023-07-30",
+    "spend": 29229.83,
+    "impressions": 2151,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 888.41
+  },
+  {
+    "date": "2023-07-31",
+    "spend": 31588.48,
+    "impressions": 2272,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1550.45
+  },
+  {
+    "date": "2023-08-01",
+    "spend": 34424.82,
+    "impressions": 2471,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 1358.5
+  },
+  {
+    "date": "2023-08-02",
+    "spend": 37647.68,
+    "impressions": 2600,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2718.81
+  },
+  {
+    "date": "2023-08-03",
+    "spend": 36329.67,
+    "impressions": 2619,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 3467.16
+  },
+  {
+    "date": "2023-08-04",
+    "spend": 38256.17,
+    "impressions": 2767,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 3153.57
+  },
+  {
+    "date": "2023-08-05",
+    "spend": 31771.31,
+    "impressions": 2244,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 2382.31
+  },
+  {
+    "date": "2023-08-06",
+    "spend": 30812.04,
+    "impressions": 2075,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 916.15
+  },
+  {
+    "date": "2023-08-07",
+    "spend": 29568.8,
+    "impressions": 2028,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 2130.89
+  },
+  {
+    "date": "2023-08-08",
+    "spend": 31879.66,
+    "impressions": 2317,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 2471.15
+  },
+  {
+    "date": "2023-08-09",
+    "spend": 31278.8,
+    "impressions": 2182,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 1239.02
+  },
+  {
+    "date": "2023-08-10",
+    "spend": 30140.64,
+    "impressions": 2044,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 1523.42
+  },
+  {
+    "date": "2023-08-11",
+    "spend": 29841.24,
+    "impressions": 2026,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 1278.09
+  },
+  {
+    "date": "2023-08-12",
+    "spend": 29249.01,
+    "impressions": 2003,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1095.38
+  },
+  {
+    "date": "2023-08-13",
+    "spend": 26410.5,
+    "impressions": 1830,
+    "clicks": 26,
+    "conversions": 0,
+    "revenue": 700.16
+  },
+  {
+    "date": "2023-08-14",
+    "spend": 26331.46,
+    "impressions": 1750,
+    "clicks": 26,
+    "conversions": 0,
+    "revenue": 1696.2
+  },
+  {
+    "date": "2023-08-15",
+    "spend": 28074.55,
+    "impressions": 1881,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 1203.17
+  },
+  {
+    "date": "2023-08-16",
+    "spend": 28649.66,
+    "impressions": 1928,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 2513.94
+  },
+  {
+    "date": "2023-08-17",
+    "spend": 30720.1,
+    "impressions": 2005,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 1793.09
+  },
+  {
+    "date": "2023-08-18",
+    "spend": 30254.64,
+    "impressions": 2031,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 936.01
+  },
+  {
+    "date": "2023-08-19",
+    "spend": 25493.85,
+    "impressions": 1676,
+    "clicks": 27,
+    "conversions": 0,
+    "revenue": 1981.26
+  },
+  {
+    "date": "2023-08-20",
+    "spend": 23290.56,
+    "impressions": 1479,
+    "clicks": 22,
+    "conversions": 0,
+    "revenue": 745.74
+  },
+  {
+    "date": "2023-08-21",
+    "spend": 24120.48,
+    "impressions": 1524,
+    "clicks": 23,
+    "conversions": 0,
+    "revenue": 1170.6
+  },
+  {
+    "date": "2023-08-22",
+    "spend": 26259.67,
+    "impressions": 1682,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 2069.55
+  },
+  {
+    "date": "2023-08-23",
+    "spend": 26420.67,
+    "impressions": 1658,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1458.9
+  },
+  {
+    "date": "2023-08-24",
+    "spend": 27144.7,
+    "impressions": 1651,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 2140.06
+  },
+  {
+    "date": "2023-08-25",
+    "spend": 27907.11,
+    "impressions": 1710,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1428.72
+  },
+  {
+    "date": "2023-08-26",
+    "spend": 26423.52,
+    "impressions": 1583,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 1394.17
+  },
+  {
+    "date": "2023-08-27",
+    "spend": 24478.55,
+    "impressions": 1474,
+    "clicks": 25,
+    "conversions": 0,
+    "revenue": 1052.83
+  },
+  {
+    "date": "2023-08-28",
+    "spend": 27683.67,
+    "impressions": 1712,
+    "clicks": 28,
+    "conversions": 0,
+    "revenue": 1339.08
+  },
+  {
+    "date": "2023-08-29",
+    "spend": 32133.42,
+    "impressions": 1891,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 1828.47
+  },
+  {
+    "date": "2023-08-30",
+    "spend": 37847.76,
+    "impressions": 2222,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 1923.07
+  },
+  {
+    "date": "2023-08-31",
+    "spend": 44685.47,
+    "impressions": 2547,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2471.48
+  },
+  {
+    "date": "2023-09-01",
+    "spend": 43592.44,
+    "impressions": 2502,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 3066.79
+  },
+  {
+    "date": "2023-09-02",
+    "spend": 39255.24,
+    "impressions": 2367,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1408.59
+  },
+  {
+    "date": "2023-09-03",
+    "spend": 37009.95,
+    "impressions": 2368,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 1887.89
+  },
+  {
+    "date": "2023-09-04",
+    "spend": 36660.68,
+    "impressions": 2421,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1155.57
+  },
+  {
+    "date": "2023-09-05",
+    "spend": 40114.07,
+    "impressions": 2496,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1112.92
+  },
+  {
+    "date": "2023-09-06",
+    "spend": 45347.36,
+    "impressions": 2822,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2829.63
+  },
+  {
+    "date": "2023-09-07",
+    "spend": 47709.76,
+    "impressions": 2925,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2539.14
+  },
+  {
+    "date": "2023-09-08",
+    "spend": 44467.09,
+    "impressions": 2785,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 2340.83
+  },
+  {
+    "date": "2023-09-09",
+    "spend": 41578.37,
+    "impressions": 2626,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1369.58
+  },
+  {
+    "date": "2023-09-10",
+    "spend": 40720.2,
+    "impressions": 2595,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 1945.12
+  },
+  {
+    "date": "2023-09-11",
+    "spend": 38344.56,
+    "impressions": 2282,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 983.06
+  },
+  {
+    "date": "2023-09-12",
+    "spend": 41170.34,
+    "impressions": 2463,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 923.3
+  },
+  {
+    "date": "2023-09-13",
+    "spend": 45881.61,
+    "impressions": 2876,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2129.66
+  },
+  {
+    "date": "2023-09-14",
+    "spend": 51397.14,
+    "impressions": 3304,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 2711.4
+  },
+  {
+    "date": "2023-09-15",
+    "spend": 48240.82,
+    "impressions": 3070,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 2908.62
+  },
+  {
+    "date": "2023-09-16",
+    "spend": 41796.29,
+    "impressions": 2709,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 1543.55
+  },
+  {
+    "date": "2023-09-17",
+    "spend": 38682.39,
+    "impressions": 2570,
+    "clicks": 35,
+    "conversions": 0,
+    "revenue": 2369.04
+  },
+  {
+    "date": "2023-09-18",
+    "spend": 40449.45,
+    "impressions": 2657,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 1942.2
+  },
+  {
+    "date": "2023-09-19",
+    "spend": 47917.19,
+    "impressions": 3076,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2745.03
+  },
+  {
+    "date": "2023-09-20",
+    "spend": 52865.35,
+    "impressions": 3333,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 1749.66
+  },
+  {
+    "date": "2023-09-21",
+    "spend": 55433.04,
+    "impressions": 3598,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 2702.01
+  },
+  {
+    "date": "2023-09-22",
+    "spend": 54288.97,
+    "impressions": 3402,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 3624.75
+  },
+  {
+    "date": "2023-09-23",
+    "spend": 50494.49,
+    "impressions": 3156,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2775.67
+  },
+  {
+    "date": "2023-09-24",
+    "spend": 46068.96,
+    "impressions": 2861,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1188.18
+  },
+  {
+    "date": "2023-09-25",
+    "spend": 44389.46,
+    "impressions": 2851,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1664.36
+  },
+  {
+    "date": "2023-09-26",
+    "spend": 43325.37,
+    "impressions": 2884,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 2175.0
+  },
+  {
+    "date": "2023-09-27",
+    "spend": 47655.63,
+    "impressions": 3145,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 3303.24
+  },
+  {
+    "date": "2023-09-28",
+    "spend": 49221.93,
+    "impressions": 3151,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 3509.2
+  },
+  {
+    "date": "2023-09-29",
+    "spend": 46729.73,
+    "impressions": 3040,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2189.63
+  },
+  {
+    "date": "2023-09-30",
+    "spend": 42247.71,
+    "impressions": 2745,
+    "clicks": 39,
+    "conversions": 0,
+    "revenue": 2281.66
+  },
+  {
+    "date": "2023-10-01",
+    "spend": 38483.48,
+    "impressions": 2314,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1956.69
+  },
+  {
+    "date": "2023-10-02",
+    "spend": 37973.03,
+    "impressions": 2359,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1356.88
+  },
+  {
+    "date": "2023-10-03",
+    "spend": 39655.55,
+    "impressions": 2608,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 1917.34
+  },
+  {
+    "date": "2023-10-04",
+    "spend": 44948.26,
+    "impressions": 3078,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 2674.52
+  },
+  {
+    "date": "2023-10-05",
+    "spend": 46872.08,
+    "impressions": 3286,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 3871.22
+  },
+  {
+    "date": "2023-10-06",
+    "spend": 44355.35,
+    "impressions": 3177,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2866.18
+  },
+  {
+    "date": "2023-10-07",
+    "spend": 41768.23,
+    "impressions": 3164,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 2420.58
+  },
+  {
+    "date": "2023-10-08",
+    "spend": 38180.46,
+    "impressions": 3049,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1516.49
+  },
+  {
+    "date": "2023-10-09",
+    "spend": 39804.85,
+    "impressions": 3070,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 947.17
+  },
+  {
+    "date": "2023-10-10",
+    "spend": 43869.61,
+    "impressions": 3455,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 2230.22
+  },
+  {
+    "date": "2023-10-11",
+    "spend": 52779.23,
+    "impressions": 4503,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 3984.21
+  },
+  {
+    "date": "2023-10-12",
+    "spend": 53327.19,
+    "impressions": 4635,
+    "clicks": 63,
+    "conversions": 1,
+    "revenue": 3912.76
+  },
+  {
+    "date": "2023-10-13",
+    "spend": 46753.86,
+    "impressions": 4222,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 3239.5
+  },
+  {
+    "date": "2023-10-14",
+    "spend": 45581.92,
+    "impressions": 4230,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 1690.23
+  },
+  {
+    "date": "2023-10-15",
+    "spend": 44349.42,
+    "impressions": 3861,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 2643.57
+  },
+  {
+    "date": "2023-10-16",
+    "spend": 42942.58,
+    "impressions": 3732,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 1288.88
+  },
+  {
+    "date": "2023-10-17",
+    "spend": 46601.95,
+    "impressions": 4089,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 1397.09
+  },
+  {
+    "date": "2023-10-18",
+    "spend": 49122.37,
+    "impressions": 4579,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 2463.35
+  },
+  {
+    "date": "2023-10-19",
+    "spend": 50448.11,
+    "impressions": 4801,
+    "clicks": 63,
+    "conversions": 1,
+    "revenue": 1972.05
+  },
+  {
+    "date": "2023-10-20",
+    "spend": 46906.99,
+    "impressions": 4260,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 3312.11
+  },
+  {
+    "date": "2023-10-21",
+    "spend": 40753.39,
+    "impressions": 3653,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 2761.61
+  },
+  {
+    "date": "2023-10-22",
+    "spend": 39369.94,
+    "impressions": 3632,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 3054.06
+  },
+  {
+    "date": "2023-10-23",
+    "spend": 40656.8,
+    "impressions": 3624,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 2583.7
+  },
+  {
+    "date": "2023-10-24",
+    "spend": 39703.11,
+    "impressions": 3711,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2270.3
+  },
+  {
+    "date": "2023-10-25",
+    "spend": 42956.08,
+    "impressions": 4106,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 2102.14
+  },
+  {
+    "date": "2023-10-26",
+    "spend": 43707.46,
+    "impressions": 4011,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 4262.48
+  },
+  {
+    "date": "2023-10-27",
+    "spend": 41638.79,
+    "impressions": 3618,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 3400.54
+  },
+  {
+    "date": "2023-10-28",
+    "spend": 35328.76,
+    "impressions": 3044,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 3227.21
+  },
+  {
+    "date": "2023-10-29",
+    "spend": 33724.29,
+    "impressions": 2806,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 1314.97
+  },
+  {
+    "date": "2023-10-30",
+    "spend": 37228.71,
+    "impressions": 3057,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2305.99
+  },
+  {
+    "date": "2023-10-31",
+    "spend": 41591.79,
+    "impressions": 3178,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 3020.56
+  },
+  {
+    "date": "2023-11-01",
+    "spend": 43069.12,
+    "impressions": 3307,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 1353.35
+  },
+  {
+    "date": "2023-11-02",
+    "spend": 44159.85,
+    "impressions": 3230,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 1949.93
+  },
+  {
+    "date": "2023-11-03",
+    "spend": 43190.11,
+    "impressions": 3302,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 2450.39
+  },
+  {
+    "date": "2023-11-04",
+    "spend": 37072.73,
+    "impressions": 3000,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1556.12
+  },
+  {
+    "date": "2023-11-05",
+    "spend": 33529.67,
+    "impressions": 2535,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 2651.23
+  },
+  {
+    "date": "2023-11-06",
+    "spend": 32127.86,
+    "impressions": 2283,
+    "clicks": 29,
+    "conversions": 0,
+    "revenue": 823.43
+  },
+  {
+    "date": "2023-11-07",
+    "spend": 40263.95,
+    "impressions": 2917,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2450.16
+  },
+  {
+    "date": "2023-11-08",
+    "spend": 48440.23,
+    "impressions": 3287,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2931.82
+  },
+  {
+    "date": "2023-11-09",
+    "spend": 49496.11,
+    "impressions": 3271,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 2868.21
+  },
+  {
+    "date": "2023-11-10",
+    "spend": 48749.1,
+    "impressions": 3123,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 2755.89
+  },
+  {
+    "date": "2023-11-11",
+    "spend": 40717.54,
+    "impressions": 2668,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1185.08
+  },
+  {
+    "date": "2023-11-12",
+    "spend": 38689.63,
+    "impressions": 2519,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1629.56
+  },
+  {
+    "date": "2023-11-13",
+    "spend": 36870.75,
+    "impressions": 2418,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 2398.23
+  },
+  {
+    "date": "2023-11-14",
+    "spend": 40613.05,
+    "impressions": 2776,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 1972.3
+  },
+  {
+    "date": "2023-11-15",
+    "spend": 44358.29,
+    "impressions": 2998,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 2044.84
+  },
+  {
+    "date": "2023-11-16",
+    "spend": 47225.67,
+    "impressions": 3231,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 4067.67
+  },
+  {
+    "date": "2023-11-17",
+    "spend": 48663.0,
+    "impressions": 3332,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 2735.92
+  },
+  {
+    "date": "2023-11-18",
+    "spend": 42027.3,
+    "impressions": 2842,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1478.05
+  },
+  {
+    "date": "2023-11-19",
+    "spend": 38458.15,
+    "impressions": 2608,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 1553.33
+  },
+  {
+    "date": "2023-11-20",
+    "spend": 36712.49,
+    "impressions": 2562,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 2553.68
+  },
+  {
+    "date": "2023-11-21",
+    "spend": 38079.35,
+    "impressions": 2659,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 1271.25
+  },
+  {
+    "date": "2023-11-22",
+    "spend": 39648.1,
+    "impressions": 2949,
+    "clicks": 54,
+    "conversions": 1,
+    "revenue": 4043.43
+  },
+  {
+    "date": "2023-11-23",
+    "spend": 40368.69,
+    "impressions": 3186,
+    "clicks": 61,
+    "conversions": 1,
+    "revenue": 4037.12
+  },
+  {
+    "date": "2023-11-24",
+    "spend": 43332.85,
+    "impressions": 3609,
+    "clicks": 64,
+    "conversions": 1,
+    "revenue": 5109.62
+  },
+  {
+    "date": "2023-11-25",
+    "spend": 37735.95,
+    "impressions": 3240,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 3665.69
+  },
+  {
+    "date": "2023-11-26",
+    "spend": 35158.63,
+    "impressions": 3056,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 3006.88
+  },
+  {
+    "date": "2023-11-27",
+    "spend": 29415.92,
+    "impressions": 2681,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 1416.49
+  },
+  {
+    "date": "2023-11-28",
+    "spend": 29593.09,
+    "impressions": 2495,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2232.72
+  },
+  {
+    "date": "2023-11-29",
+    "spend": 35605.78,
+    "impressions": 3024,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 1563.54
+  },
+  {
+    "date": "2023-11-30",
+    "spend": 36189.83,
+    "impressions": 3167,
+    "clicks": 54,
+    "conversions": 1,
+    "revenue": 2537.19
+  },
+  {
+    "date": "2023-12-01",
+    "spend": 34232.47,
+    "impressions": 2953,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 3823.15
+  },
+  {
+    "date": "2023-12-02",
+    "spend": 30927.68,
+    "impressions": 2631,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2817.92
+  },
+  {
+    "date": "2023-12-03",
+    "spend": 34488.76,
+    "impressions": 2955,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 1431.92
+  },
+  {
+    "date": "2023-12-04",
+    "spend": 33452.48,
+    "impressions": 2713,
+    "clicks": 39,
+    "conversions": 1,
+    "revenue": 3314.35
+  },
+  {
+    "date": "2023-12-05",
+    "spend": 34734.95,
+    "impressions": 2715,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 2619.17
+  },
+  {
+    "date": "2023-12-06",
+    "spend": 37810.07,
+    "impressions": 2868,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 3036.84
+  },
+  {
+    "date": "2023-12-07",
+    "spend": 41704.22,
+    "impressions": 3241,
+    "clicks": 61,
+    "conversions": 1,
+    "revenue": 4746.27
+  },
+  {
+    "date": "2023-12-08",
+    "spend": 39003.72,
+    "impressions": 3096,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 4444.84
+  },
+  {
+    "date": "2023-12-09",
+    "spend": 33364.48,
+    "impressions": 2447,
+    "clicks": 39,
+    "conversions": 1,
+    "revenue": 1298.01
+  },
+  {
+    "date": "2023-12-10",
+    "spend": 30858.83,
+    "impressions": 2220,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1723.36
+  },
+  {
+    "date": "2023-12-11",
+    "spend": 32930.29,
+    "impressions": 2384,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1293.85
+  },
+  {
+    "date": "2023-12-12",
+    "spend": 36095.63,
+    "impressions": 2453,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 3016.47
+  },
+  {
+    "date": "2023-12-13",
+    "spend": 39076.05,
+    "impressions": 2625,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 3378.8
+  },
+  {
+    "date": "2023-12-14",
+    "spend": 36795.6,
+    "impressions": 2496,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 3550.41
+  },
+  {
+    "date": "2023-12-15",
+    "spend": 35251.01,
+    "impressions": 2290,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 1852.88
+  },
+  {
+    "date": "2023-12-16",
+    "spend": 31163.21,
+    "impressions": 2061,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 1546.09
+  },
+  {
+    "date": "2023-12-17",
+    "spend": 31623.7,
+    "impressions": 2010,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1468.26
+  },
+  {
+    "date": "2023-12-18",
+    "spend": 31994.79,
+    "impressions": 2031,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1097.33
+  },
+  {
+    "date": "2023-12-19",
+    "spend": 35037.84,
+    "impressions": 2256,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 1375.23
+  },
+  {
+    "date": "2023-12-20",
+    "spend": 40270.19,
+    "impressions": 2636,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2963.03
+  },
+  {
+    "date": "2023-12-21",
+    "spend": 40707.49,
+    "impressions": 2754,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 1535.06
+  },
+  {
+    "date": "2023-12-22",
+    "spend": 40313.92,
+    "impressions": 2661,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 3165.57
+  },
+  {
+    "date": "2023-12-23",
+    "spend": 39903.17,
+    "impressions": 2576,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 1467.01
+  },
+  {
+    "date": "2023-12-24",
+    "spend": 38904.69,
+    "impressions": 2499,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 1765.25
+  },
+  {
+    "date": "2023-12-25",
+    "spend": 39385.69,
+    "impressions": 2503,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 1538.14
+  },
+  {
+    "date": "2023-12-26",
+    "spend": 43256.33,
+    "impressions": 2731,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 3000.59
+  },
+  {
+    "date": "2023-12-27",
+    "spend": 49356.94,
+    "impressions": 3169,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 3928.02
+  },
+  {
+    "date": "2023-12-28",
+    "spend": 51794.49,
+    "impressions": 3424,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 2412.65
+  },
+  {
+    "date": "2023-12-29",
+    "spend": 46550.51,
+    "impressions": 2997,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2168.44
+  },
+  {
+    "date": "2023-12-30",
+    "spend": 43725.38,
+    "impressions": 2776,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2556.86
+  },
+  {
+    "date": "2023-12-31",
+    "spend": 42541.05,
+    "impressions": 2694,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1175.73
+  },
+  {
+    "date": "2024-01-01",
+    "spend": 43924.91,
+    "impressions": 2758,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 2903.32
+  },
+  {
+    "date": "2024-01-02",
+    "spend": 48928.66,
+    "impressions": 3356,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2377.67
+  },
+  {
+    "date": "2024-01-03",
+    "spend": 54313.47,
+    "impressions": 3614,
+    "clicks": 62,
+    "conversions": 1,
+    "revenue": 3402.4
+  },
+  {
+    "date": "2024-01-04",
+    "spend": 58323.04,
+    "impressions": 3679,
+    "clicks": 69,
+    "conversions": 2,
+    "revenue": 2988.05
+  },
+  {
+    "date": "2024-01-05",
+    "spend": 51291.15,
+    "impressions": 3260,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 3863.49
+  },
+  {
+    "date": "2024-01-06",
+    "spend": 49440.48,
+    "impressions": 3137,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 3331.5
+  },
+  {
+    "date": "2024-01-07",
+    "spend": 41596.96,
+    "impressions": 2676,
+    "clicks": 39,
+    "conversions": 1,
+    "revenue": 1256.59
+  },
+  {
+    "date": "2024-01-08",
+    "spend": 41530.75,
+    "impressions": 2798,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2627.08
+  },
+  {
+    "date": "2024-01-09",
+    "spend": 44900.39,
+    "impressions": 3045,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 1361.46
+  },
+  {
+    "date": "2024-01-10",
+    "spend": 52329.87,
+    "impressions": 3509,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 3388.43
+  },
+  {
+    "date": "2024-01-11",
+    "spend": 54299.19,
+    "impressions": 3738,
+    "clicks": 65,
+    "conversions": 1,
+    "revenue": 4202.63
+  },
+  {
+    "date": "2024-01-12",
+    "spend": 52079.67,
+    "impressions": 3456,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 3262.57
+  },
+  {
+    "date": "2024-01-13",
+    "spend": 43738.83,
+    "impressions": 3040,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2339.65
+  },
+  {
+    "date": "2024-01-14",
+    "spend": 42061.49,
+    "impressions": 3093,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 3233.58
+  },
+  {
+    "date": "2024-01-15",
+    "spend": 42847.12,
+    "impressions": 3233,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2263.45
+  },
+  {
+    "date": "2024-01-16",
+    "spend": 44176.14,
+    "impressions": 3359,
+    "clicks": 46,
+    "conversions": 1,
+    "revenue": 3299.66
+  },
+  {
+    "date": "2024-01-17",
+    "spend": 51132.56,
+    "impressions": 3714,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 2810.78
+  },
+  {
+    "date": "2024-01-18",
+    "spend": 53942.12,
+    "impressions": 3818,
+    "clicks": 61,
+    "conversions": 1,
+    "revenue": 3886.57
+  },
+  {
+    "date": "2024-01-19",
+    "spend": 50272.39,
+    "impressions": 3550,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 2030.98
+  },
+  {
+    "date": "2024-01-20",
+    "spend": 42064.68,
+    "impressions": 2983,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 2581.35
+  },
+  {
+    "date": "2024-01-21",
+    "spend": 41241.46,
+    "impressions": 2837,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 2648.83
+  },
+  {
+    "date": "2024-01-22",
+    "spend": 43179.77,
+    "impressions": 3097,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1710.32
+  },
+  {
+    "date": "2024-01-23",
+    "spend": 47717.32,
+    "impressions": 3357,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 3367.74
+  },
+  {
+    "date": "2024-01-24",
+    "spend": 48641.16,
+    "impressions": 3328,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2356.18
+  },
+  {
+    "date": "2024-01-25",
+    "spend": 53948.61,
+    "impressions": 3819,
+    "clicks": 57,
+    "conversions": 1,
+    "revenue": 2299.95
+  },
+  {
+    "date": "2024-01-26",
+    "spend": 53195.2,
+    "impressions": 3806,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 2073.97
+  },
+  {
+    "date": "2024-01-27",
+    "spend": 50289.35,
+    "impressions": 3788,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 1631.44
+  },
+  {
+    "date": "2024-01-28",
+    "spend": 49428.3,
+    "impressions": 3591,
+    "clicks": 39,
+    "conversions": 1,
+    "revenue": 2006.28
+  },
+  {
+    "date": "2024-01-29",
+    "spend": 47234.97,
+    "impressions": 3436,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 1271.21
+  },
+  {
+    "date": "2024-01-30",
+    "spend": 50799.4,
+    "impressions": 3754,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 1544.66
+  },
+  {
+    "date": "2024-01-31",
+    "spend": 55082.54,
+    "impressions": 4360,
+    "clicks": 60,
+    "conversions": 1,
+    "revenue": 4971.84
+  },
+  {
+    "date": "2024-02-01",
+    "spend": 58348.18,
+    "impressions": 4411,
+    "clicks": 65,
+    "conversions": 1,
+    "revenue": 5700.97
+  },
+  {
+    "date": "2024-02-02",
+    "spend": 52011.22,
+    "impressions": 3854,
+    "clicks": 51,
+    "conversions": 1,
+    "revenue": 1974.4
+  },
+  {
+    "date": "2024-02-03",
+    "spend": 47934.78,
+    "impressions": 3468,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2495.86
+  },
+  {
+    "date": "2024-02-04",
+    "spend": 42684.46,
+    "impressions": 3235,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 3196.05
+  },
+  {
+    "date": "2024-02-05",
+    "spend": 43262.95,
+    "impressions": 3416,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 2000.18
+  },
+  {
+    "date": "2024-02-06",
+    "spend": 48692.78,
+    "impressions": 3800,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 2739.27
+  },
+  {
+    "date": "2024-02-07",
+    "spend": 53317.17,
+    "impressions": 4236,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 2906.1
+  },
+  {
+    "date": "2024-02-08",
+    "spend": 59426.6,
+    "impressions": 4670,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 4404.85
+  },
+  {
+    "date": "2024-02-09",
+    "spend": 56287.24,
+    "impressions": 4376,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 2264.45
+  },
+  {
+    "date": "2024-02-10",
+    "spend": 51594.79,
+    "impressions": 4011,
+    "clicks": 39,
+    "conversions": 1,
+    "revenue": 3256.07
+  },
+  {
+    "date": "2024-02-11",
+    "spend": 46447.82,
+    "impressions": 3741,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 2386.23
+  },
+  {
+    "date": "2024-02-12",
+    "spend": 46008.38,
+    "impressions": 3339,
+    "clicks": 28,
+    "conversions": 0,
+    "revenue": 2306.62
+  },
+  {
+    "date": "2024-02-13",
+    "spend": 51104.6,
+    "impressions": 3639,
+    "clicks": 33,
+    "conversions": 0,
+    "revenue": 2133.53
+  },
+  {
+    "date": "2024-02-14",
+    "spend": 58399.5,
+    "impressions": 4177,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2692.98
+  },
+  {
+    "date": "2024-02-15",
+    "spend": 60226.94,
+    "impressions": 4309,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 3523.37
+  },
+  {
+    "date": "2024-02-16",
+    "spend": 56280.13,
+    "impressions": 4085,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 2427.86
+  },
+  {
+    "date": "2024-02-17",
+    "spend": 51809.6,
+    "impressions": 3634,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1768.39
+  },
+  {
+    "date": "2024-02-18",
+    "spend": 46756.32,
+    "impressions": 3230,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 2389.54
+  },
+  {
+    "date": "2024-02-19",
+    "spend": 48996.62,
+    "impressions": 3343,
+    "clicks": 34,
+    "conversions": 1,
+    "revenue": 1226.59
+  },
+  {
+    "date": "2024-02-20",
+    "spend": 49414.75,
+    "impressions": 3571,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 1306.58
+  },
+  {
+    "date": "2024-02-21",
+    "spend": 54810.26,
+    "impressions": 4250,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 1674.92
+  },
+  {
+    "date": "2024-02-22",
+    "spend": 57464.92,
+    "impressions": 4485,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 1954.23
+  },
+  {
+    "date": "2024-02-23",
+    "spend": 53269.02,
+    "impressions": 4285,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 3790.63
+  },
+  {
+    "date": "2024-02-24",
+    "spend": 49309.15,
+    "impressions": 4009,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2397.64
+  },
+  {
+    "date": "2024-02-25",
+    "spend": 46057.57,
+    "impressions": 3734,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 1854.57
+  },
+  {
+    "date": "2024-02-26",
+    "spend": 48164.99,
+    "impressions": 3902,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 2058.94
+  },
+  {
+    "date": "2024-02-27",
+    "spend": 50978.35,
+    "impressions": 4094,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2019.51
+  },
+  {
+    "date": "2024-02-28",
+    "spend": 59064.61,
+    "impressions": 4697,
+    "clicks": 58,
+    "conversions": 1,
+    "revenue": 3652.7
+  },
+  {
+    "date": "2024-02-29",
+    "spend": 58040.0,
+    "impressions": 4618,
+    "clicks": 60,
+    "conversions": 1,
+    "revenue": 2922.17
+  },
+  {
+    "date": "2024-03-01",
+    "spend": 55646.83,
+    "impressions": 4539,
+    "clicks": 58,
+    "conversions": 1,
+    "revenue": 2741.52
+  },
+  {
+    "date": "2024-03-02",
+    "spend": 48746.73,
+    "impressions": 3845,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 2182.51
+  },
+  {
+    "date": "2024-03-03",
+    "spend": 44127.68,
+    "impressions": 3382,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 1737.02
+  },
+  {
+    "date": "2024-03-04",
+    "spend": 43952.94,
+    "impressions": 3261,
+    "clicks": 34,
+    "conversions": 1,
+    "revenue": 1835.76
+  },
+  {
+    "date": "2024-03-05",
+    "spend": 44633.28,
+    "impressions": 3128,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 2637.13
+  },
+  {
+    "date": "2024-03-06",
+    "spend": 49527.55,
+    "impressions": 3460,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2233.82
+  },
+  {
+    "date": "2024-03-07",
+    "spend": 52072.49,
+    "impressions": 3693,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 2701.84
+  },
+  {
+    "date": "2024-03-08",
+    "spend": 45515.71,
+    "impressions": 3400,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 1973.0
+  },
+  {
+    "date": "2024-03-09",
+    "spend": 40590.74,
+    "impressions": 2898,
+    "clicks": 32,
+    "conversions": 1,
+    "revenue": 2716.65
+  },
+  {
+    "date": "2024-03-10",
+    "spend": 37369.72,
+    "impressions": 2571,
+    "clicks": 27,
+    "conversions": 0,
+    "revenue": 1203.93
+  },
+  {
+    "date": "2024-03-11",
+    "spend": 36633.8,
+    "impressions": 2586,
+    "clicks": 28,
+    "conversions": 0,
+    "revenue": 2062.17
+  },
+  {
+    "date": "2024-03-12",
+    "spend": 43147.97,
+    "impressions": 3178,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 2793.1
+  },
+  {
+    "date": "2024-03-13",
+    "spend": 44363.83,
+    "impressions": 3376,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1511.78
+  },
+  {
+    "date": "2024-03-14",
+    "spend": 45322.09,
+    "impressions": 3353,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 1440.52
+  },
+  {
+    "date": "2024-03-15",
+    "spend": 38402.67,
+    "impressions": 2863,
+    "clicks": 34,
+    "conversions": 1,
+    "revenue": 1939.91
+  },
+  {
+    "date": "2024-03-16",
+    "spend": 34274.41,
+    "impressions": 2556,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 2799.18
+  },
+  {
+    "date": "2024-03-17",
+    "spend": 30353.11,
+    "impressions": 2177,
+    "clicks": 26,
+    "conversions": 0,
+    "revenue": 2077.64
+  },
+  {
+    "date": "2024-03-18",
+    "spend": 31636.74,
+    "impressions": 2215,
+    "clicks": 27,
+    "conversions": 0,
+    "revenue": 1050.68
+  },
+  {
+    "date": "2024-03-19",
+    "spend": 34769.13,
+    "impressions": 2633,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1961.83
+  },
+  {
+    "date": "2024-03-20",
+    "spend": 38804.09,
+    "impressions": 2918,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 3533.21
+  },
+  {
+    "date": "2024-03-21",
+    "spend": 40217.24,
+    "impressions": 3069,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 2032.81
+  },
+  {
+    "date": "2024-03-22",
+    "spend": 41746.7,
+    "impressions": 3206,
+    "clicks": 45,
+    "conversions": 1,
+    "revenue": 1536.65
+  },
+  {
+    "date": "2024-03-23",
+    "spend": 36593.66,
+    "impressions": 2831,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1626.26
+  },
+  {
+    "date": "2024-03-24",
+    "spend": 34853.01,
+    "impressions": 2568,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1991.95
+  },
+  {
+    "date": "2024-03-25",
+    "spend": 38109.23,
+    "impressions": 2948,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 2522.83
+  },
+  {
+    "date": "2024-03-26",
+    "spend": 42202.19,
+    "impressions": 3293,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 2410.55
+  },
+  {
+    "date": "2024-03-27",
+    "spend": 46084.32,
+    "impressions": 3755,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 4620.3
+  },
+  {
+    "date": "2024-03-28",
+    "spend": 48202.37,
+    "impressions": 3627,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 1740.2
+  },
+  {
+    "date": "2024-03-29",
+    "spend": 42582.06,
+    "impressions": 2959,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2260.49
+  },
+  {
+    "date": "2024-03-30",
+    "spend": 39583.21,
+    "impressions": 2791,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 2856.18
+  },
+  {
+    "date": "2024-03-31",
+    "spend": 33598.83,
+    "impressions": 2404,
+    "clicks": 25,
+    "conversions": 0,
+    "revenue": 1708.71
+  },
+  {
+    "date": "2024-04-01",
+    "spend": 33737.13,
+    "impressions": 2377,
+    "clicks": 25,
+    "conversions": 0,
+    "revenue": 1955.03
+  },
+  {
+    "date": "2024-04-02",
+    "spend": 38274.24,
+    "impressions": 2790,
+    "clicks": 32,
+    "conversions": 0,
+    "revenue": 2222.21
+  },
+  {
+    "date": "2024-04-03",
+    "spend": 42896.02,
+    "impressions": 2966,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 2189.16
+  },
+  {
+    "date": "2024-04-04",
+    "spend": 42212.6,
+    "impressions": 2855,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 1630.29
+  },
+  {
+    "date": "2024-04-05",
+    "spend": 40985.41,
+    "impressions": 2816,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 2041.56
+  },
+  {
+    "date": "2024-04-06",
+    "spend": 37691.77,
+    "impressions": 2662,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 1476.11
+  },
+  {
+    "date": "2024-04-07",
+    "spend": 37273.09,
+    "impressions": 2693,
+    "clicks": 30,
+    "conversions": 0,
+    "revenue": 1607.49
+  },
+  {
+    "date": "2024-04-08",
+    "spend": 38548.55,
+    "impressions": 2774,
+    "clicks": 31,
+    "conversions": 0,
+    "revenue": 1612.74
+  },
+  {
+    "date": "2024-04-09",
+    "spend": 43594.98,
+    "impressions": 3376,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 2790.29
+  },
+  {
+    "date": "2024-04-10",
+    "spend": 48026.43,
+    "impressions": 3951,
+    "clicks": 50,
+    "conversions": 1,
+    "revenue": 1617.32
+  },
+  {
+    "date": "2024-04-11",
+    "spend": 51434.1,
+    "impressions": 4211,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 3096.31
+  },
+  {
+    "date": "2024-04-12",
+    "spend": 51130.76,
+    "impressions": 4327,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 2885.11
+  },
+  {
+    "date": "2024-04-13",
+    "spend": 48963.79,
+    "impressions": 4164,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 2932.04
+  },
+  {
+    "date": "2024-04-14",
+    "spend": 43335.85,
+    "impressions": 3772,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 3362.34
+  },
+  {
+    "date": "2024-04-15",
+    "spend": 44244.44,
+    "impressions": 3778,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1826.51
+  },
+  {
+    "date": "2024-04-16",
+    "spend": 48722.83,
+    "impressions": 4335,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 3966.74
+  },
+  {
+    "date": "2024-04-17",
+    "spend": 53403.76,
+    "impressions": 4858,
+    "clicks": 53,
+    "conversions": 1,
+    "revenue": 2053.67
+  },
+  {
+    "date": "2024-04-18",
+    "spend": 53690.02,
+    "impressions": 5050,
+    "clicks": 59,
+    "conversions": 1,
+    "revenue": 2898.41
+  },
+  {
+    "date": "2024-04-19",
+    "spend": 52341.2,
+    "impressions": 4771,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 3075.02
+  },
+  {
+    "date": "2024-04-20",
+    "spend": 48374.83,
+    "impressions": 4241,
+    "clicks": 42,
+    "conversions": 1,
+    "revenue": 1729.22
+  },
+  {
+    "date": "2024-04-21",
+    "spend": 47307.24,
+    "impressions": 4257,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 2661.12
+  },
+  {
+    "date": "2024-04-22",
+    "spend": 48173.44,
+    "impressions": 4008,
+    "clicks": 37,
+    "conversions": 1,
+    "revenue": 1491.6
+  },
+  {
+    "date": "2024-04-23",
+    "spend": 48806.42,
+    "impressions": 3952,
+    "clicks": 41,
+    "conversions": 1,
+    "revenue": 1958.04
+  },
+  {
+    "date": "2024-04-24",
+    "spend": 51575.65,
+    "impressions": 4169,
+    "clicks": 49,
+    "conversions": 1,
+    "revenue": 3028.07
+  },
+  {
+    "date": "2024-04-25",
+    "spend": 55770.11,
+    "impressions": 4411,
+    "clicks": 56,
+    "conversions": 1,
+    "revenue": 4128.8
+  },
+  {
+    "date": "2024-04-26",
+    "spend": 55214.13,
+    "impressions": 4185,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 4342.25
+  },
+  {
+    "date": "2024-04-27",
+    "spend": 47935.6,
+    "impressions": 3711,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 2197.9
+  },
+  {
+    "date": "2024-04-28",
+    "spend": 44442.21,
+    "impressions": 3357,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2301.71
+  },
+  {
+    "date": "2024-04-29",
+    "spend": 46240.42,
+    "impressions": 3402,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 1970.72
+  },
+  {
+    "date": "2024-04-30",
+    "spend": 47803.99,
+    "impressions": 3418,
+    "clicks": 40,
+    "conversions": 1,
+    "revenue": 3187.56
+  },
+  {
+    "date": "2024-05-01",
+    "spend": 51124.89,
+    "impressions": 3653,
+    "clicks": 48,
+    "conversions": 1,
+    "revenue": 3541.13
+  },
+  {
+    "date": "2024-05-02",
+    "spend": 56341.31,
+    "impressions": 3990,
+    "clicks": 54,
+    "conversions": 1,
+    "revenue": 2953.01
+  },
+  {
+    "date": "2024-05-03",
+    "spend": 53242.4,
+    "impressions": 3679,
+    "clicks": 47,
+    "conversions": 1,
+    "revenue": 3334.0
+  },
+  {
+    "date": "2024-05-04",
+    "spend": 51634.08,
+    "impressions": 3435,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 3133.87
+  },
+  {
+    "date": "2024-05-05",
+    "spend": 48442.75,
+    "impressions": 3424,
+    "clicks": 35,
+    "conversions": 1,
+    "revenue": 1719.76
+  },
+  {
+    "date": "2024-05-06",
+    "spend": 46805.87,
+    "impressions": 3170,
+    "clicks": 34,
+    "conversions": 1,
+    "revenue": 1879.44
+  },
+  {
+    "date": "2024-05-07",
+    "spend": 53237.98,
+    "impressions": 3746,
+    "clicks": 43,
+    "conversions": 1,
+    "revenue": 1424.09
+  },
+  {
+    "date": "2024-05-08",
+    "spend": 61054.87,
+    "impressions": 4095,
+    "clicks": 52,
+    "conversions": 1,
+    "revenue": 3560.89
+  },
+  {
+    "date": "2024-05-09",
+    "spend": 64351.43,
+    "impressions": 4376,
+    "clicks": 58,
+    "conversions": 1,
+    "revenue": 2670.23
+  },
+  {
+    "date": "2024-05-10",
+    "spend": 61803.21,
+    "impressions": 4400,
+    "clicks": 55,
+    "conversions": 1,
+    "revenue": 4718.37
+  },
+  {
+    "date": "2024-05-11",
+    "spend": 57736.73,
+    "impressions": 3982,
+    "clicks": 44,
+    "conversions": 1,
+    "revenue": 2385.68
+  },
+  {
+    "date": "2024-05-12",
+    "spend": 52092.94,
+    "impressions": 3697,
+    "clicks": 36,
+    "conversions": 1,
+    "revenue": 2048.61
+  },
+  {
+    "date": "2024-05-13",
+    "spend": 52331.63,
+    "impressions": 3686,
+    "clicks": 34,
+    "conversions": 0,
+    "revenue": 2175.48
+  },
+  {
+    "date": "2024-05-14",
+    "spend": 54778.36,
+    "impressions": 3830,
+    "clicks": 38,
+    "conversions": 1,
+    "revenue": 2480.01
+  },
+  {
+    "date": "2024-05-15",
+    "spend": 55349.07,
+    "impressions": 3507,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-16",
+    "spend": 55961.68,
+    "impressions": 3587,
+    "clicks": 41,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-17",
+    "spend": 55888.95,
+    "impressions": 3584,
+    "clicks": 41,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-18",
+    "spend": 54891.59,
+    "impressions": 3798,
+    "clicks": 40,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-19",
+    "spend": 50746.36,
+    "impressions": 3545,
+    "clicks": 37,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-20",
+    "spend": 52129.45,
+    "impressions": 3640,
+    "clicks": 36,
+    "conversions": 0,
+    "revenue": 0.0
+  },
+  {
+    "date": "2024-05-21",
+    "spend": 53518.7,
+    "impressions": 3678,
+    "clicks": 38,
+    "conversions": 0,
+    "revenue": 0.0
+  }
+]

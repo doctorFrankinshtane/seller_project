@@ -1,0 +1,1870 @@
+/* ==================== */
+/* Общие стили и переменные */
+/* ==================== */
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary: #7209b7;
+    --success: #06d6a0;
+    --warning: #ffd166;
+    --danger: #ef476f;
+    --info: #118ab2;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --white: #ffffff;
+    --black: #000000;
+    --border-radius: 12px;
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gray-100);
+    color: var(--gray-800);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ==================== */
+/* Боковое меню */
+/* ==================== */
+.sidebar {
+    width: 250px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.sidebar .logo {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.sidebar .logo i {
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    padding: 1rem 0;
+    flex: 1;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--gray-700);
+    text-decoration: none;
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-left-color: var(--warning);
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+
+
+/* ==================== */
+/* Основное содержимое */
+/* ==================== */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Верхняя панель */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 900;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--gray-700);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.menu-toggle:hover {
+    background-color: var(--gray-200);
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.user-name {
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* ==================== */
+/* Контейнер страниц */
+/* ==================== */
+.page-container {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* ==================== */
+/* Общие стили для карточек */
+/* ==================== */
+.card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==================== */
+/* Статистические карточки */
+/* ==================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+.trend {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.trend.up {
+    color: var(--success);
+}
+
+.trend.down {
+    color: var(--danger);
+}
+
+/* ==================== */
+/* Графики */
+/* ==================== */
+.charts-grid {
+    display: grid;
+    /* Минимальная ширина 500px, 1fr для гибкости */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.chart-container:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.chart-header {
+    padding: 1rem 1.5rem;
+    background-color: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-header h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+/* Убедитесь, что контейнеры графиков адаптивны */
+.chart-wrapper {
+    width: 100%;
+    height: 350px;
+    /* Или другая подходящая высота */
+    position: relative;
+    overflow: hidden;
+    /* Скрывает выходящие за границы элементы */
+    padding: 1rem;
+}
+
+/* ==================== */
+/* Секции */
+/* ==================== */
+.section {
+    margin-top: 3rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+/* ML Статус */
+.ml-status-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.status-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-trained {
+    background-color: var(--success);
+    color: var(--white);
+}
+
+.status-training {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.status-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-label {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+.status-value {
+    font-weight: 500;
+    color: var(--gray-900);
+}
+
+/* Индикатор загрузки */
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px dashed #e5e7eb;
+    margin-top: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.loading-indicator .spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid rgba(59, 130, 246, 0.2);
+    border-top: 0.25rem solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-indicator p {
+    margin: 0;
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+/* Прогресс-бар */
+.progress {
+    width: 100%;
+    height: 1rem;
+    background-color: #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+/* Сообщения об ошибках */
+.ml-error-message {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    color: #991b1b;
+    margin-bottom: 1rem;
+}
+
+.ml-error-message i {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.ml-error-message div {
+    flex-grow: 1;
+}
+
+.ml-error-message h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ml-error-message p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Сообщение "Нет данных" */
+.no-data-message {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+}
+
+.no-data-message i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+}
+
+.no-data-message p {
+    margin: 0;
+}
+
+/* ==================== */
+/* Рекомендации */
+/* ==================== */
+.recommendations {
+    margin-top: 2rem;
+}
+
+.recommendations h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recommendation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.recommendation-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.recommendation-content {
+    flex: 1;
+}
+
+.recommendation-title {
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 0.25rem;
+}
+
+.recommendation-desc {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+/* ==================== */
+/* Кнопки */
+/* ==================== */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    /* Для ссылок-кнопок */
+    justify-content: center;
+    /* Центрирование текста */
+}
+
+.btn:hover {
+    opacity: 0.9;
+    background-color: var(--primary-dark);
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--gray-300);
+    color: var(--gray-700);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+}
+
+/* Специфичные стили кнопок */
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.btn-warning:hover {
+    background-color: #e6c356;
+    /* немного темнее */
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--white);
+}
+
+.btn-success:hover {
+    background-color: #05c191;
+    /* немного темнее */
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.btn-danger:hover {
+    background-color: #e03a63;
+    /* немного темнее */
+}
+
+/* ==================== */
+/* Стили для полноэкранного режима */
+/* ==================== */
+.plotly-fullscreen-btn,
+.fullscreen-btn {
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    padding: 6px 10px !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+.plotly-fullscreen-btn:hover,
+.fullscreen-btn:hover {
+    background: rgba(240, 240, 240, 0.95) !important;
+    border-color: #999 !important;
+    transform: scale(1.05) !important;
+}
+
+/* ==================== */
+/* Модальное окно */
+/* ==================== */
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen-modal.active {
+    display: flex;
+}
+
+.fullscreen-content {
+    width: 95%;
+    height: 95%;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+}
+
+.fullscreen-header {
+    padding: 1rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fullscreen-header h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.fullscreen-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fullscreen-chart-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== */
+/* Стили для страницы моделей */
+/* ==================== */
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.model-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.model-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.model-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin: 0;
+}
+
+/* Стили для бейджей статуса */
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.status-success {
+    background-color: rgba(6, 214, 160, 0.15);
+    color: var(--success);
+}
+
+.status-warning {
+    background-color: rgba(255, 209, 102, 0.15);
+    color: #997404;
+    /* Темнее, чем var(--warning) для лучшей читаемости */
+}
+
+.status-danger {
+    background-color: rgba(239, 71, 111, 0.15);
+    color: var(--danger);
+}
+
+.model-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    color: var(--gray-600);
+}
+
+.detail-value {
+    font-weight: 500;
+    color: var(--gray-800);
+    text-align: right;
+}
+
+/* Стили для прогресс-бара */
+.progress-bar-container {
+    width: 100%;
+    background-color: var(--gray-200);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--gray-200);
+    border-radius: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--warning);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.model-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.model-actions .btn {
+    flex: 1;
+    justify-content: center;
+}
+
+/* ==================== */
+/* Стили для страницы отчетов */
+/* ==================== */
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.page-description {
+    font-size: 1rem;
+    color: var(--gray-600);
+    max-width: 400px;
+}
+
+.reports-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-weight: 500;
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-control {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.report-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.report-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.report-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.report-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.report-info {
+    flex: 1;
+}
+
+.report-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin: 0 0 0.25rem 0;
+}
+
+.report-meta {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin: 0;
+}
+
+.report-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.report-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.report-actions .btn {
+    flex: 1;
+    justify-content: center;
+}
+
+.report-actions .btn-outline {
+    flex: unset;
+    padding: 0.5rem;
+}
+
+/* Стили для формы создания отчета */
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ==================== */
+/* Стили для страницы настроек */
+/* ==================== */
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+}
+
+.settings-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settings-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.settings-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.settings-info {
+    flex: 1;
+}
+
+.settings-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin: 0 0 0.25rem 0;
+}
+
+.settings-desc {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin: 0;
+}
+
+/* Стили для форм */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    background-color: var(--white);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+/* Стили для опций настроек */
+.settings-options,
+.security-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--gray-50);
+    transition: var(--transition);
+}
+
+.option-item:hover {
+    background-color: var(--gray-100);
+}
+
+.option-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.option-label {
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.option-desc {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+.option-toggle,
+.option-action {
+    flex-shrink: 0;
+}
+
+/* Переключатель (Switch) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray-300);
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: var(--success);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Стили для интеграций */
+.integrations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.integration-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--gray-50);
+    transition: var(--transition);
+}
+
+.integration-item:hover {
+    background-color: var(--gray-100);
+}
+
+.integration-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.integration-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+
+.integration-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.integration-name {
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.integration-status {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.integration-status i {
+    font-size: 0.5rem;
+}
+
+.status-connected {
+    color: var(--success);
+}
+
+.status-disconnected {
+    color: var(--gray-500);
+}
+
+.integration-actions {
+    flex-shrink: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .settings-icon {
+        align-self: center;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .option-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .option-toggle,
+    .option-action {
+        align-self: flex-end;
+    }
+
+    .integration-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .integration-info {
+        width: 100%;
+    }
+
+    .integration-actions {
+        align-self: flex-end;
+    }
+}
+
+/* ==================== */
+/* Стили для страницы входа */
+/* ==================== */
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 1rem;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    text-align: center;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.login-header h2 {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    color: var(--gray-600);
+    font-size: 1rem;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-500);
+    width: 20px;
+    text-align: center;
+}
+
+.login-form .form-control {
+    padding: 0.85rem 1rem 0.85rem 45px;
+    /* Дополнительный левый отступ для иконки */
+    width: 100%;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.login-form .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.btn-block {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.1rem;
+}
+
+.login-error {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: rgba(239, 71, 111, 0.1);
+    color: var(--danger);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.login-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-200);
+}
+
+.login-footer p {
+    color: var(--gray-600);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* ==================== */
+/* Панель администратора в сайдбаре */
+/* ==================== */
+.admin-panel {
+    padding: 1rem;
+    border-top: 1px solid var(--gray-200);
+    margin-top: auto;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.admin-info .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--warning);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.admin-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-name {
+    font-weight: 500;
+    color: var(--gray-800);
+    font-size: 0.9rem;
+}
+
+.admin-role {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+}
+
+.admin-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-actions .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+/* Дополнительные стили для новых страниц */
+
+/* Страница Аналитика */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Страница Кампании */
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.stat-card .stat-desc {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Страница Аудитория */
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.tag-primary { background-color: #dbeafe; color: #1e40af; }
+.tag-success { background-color: #dcfce7; color: #166534; }
+.tag-warning { background-color: #fef3c7; color: #92400e; }
+.tag-info { background-color: #cffafe; color: #0e7490; }
+.tag-secondary { background-color: #f3f4f6; color: #374151; }
+
+.segments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.segment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+.segment-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.segment-info p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.segment-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Страница Конкуренты */
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-group .form-control {
+    flex-grow: 1;
+}
+
+/* Страница Ключевые слова */
+.table td, .table th {
+    white-space: nowrap;
+}
+
+/* Страница Контент */
+.action-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+/* ==================== */
+/* Адаптивность для логина */
+/* ==================== */
+@media (max-width: 576px) {
+    .login-card {
+        padding: 1.5rem;
+    }
+
+    .login-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==================== */
+/* Адаптивность */
+/* ==================== */
+
+/* --- Адаптивность --- */
+@media (max-width: 1200px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    width: 70px;
+  }
+  
+  .sidebar .logo span,
+  .nav-link span {
+    display: none;
+  }
+  
+  .sidebar .logo {
+    justify-content: center;
+    padding: 0 0 20px;
+  }
+  
+  .sidebar .logo i {
+    margin-right: 0;
+    font-size: 1.8rem;
+  }
+  
+  .nav-link {
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .nav-link i {
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+  
+  .sidebar-footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .sidebar-footer .btn span {
+    display: none;
+  }
+  
+  .sidebar-footer .btn i {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+  
+  .page {
+    padding: 20px 15px;
+  }
+  
+  .page-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .grid-cols-4,
+  .grid-cols-5 {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .card-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .recommendation-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Адаптивность для графиков */
+    .chart-wrapper {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar .logo span,
+    .nav-link span {
+        display: none;
+    }
+
+    .sidebar .logo {
+        justify-content: center;
+    }
+
+    .header-left {
+        gap: 0.5rem;
+    }
+
+    .page-title {
+        font-size: 1.25rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* Адаптивность для графиков */
+    .chart-wrapper {
+        height: 280px;
+        padding: 0.75rem;
+    }
+
+    .chart-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .chart-header h3 {
+        font-size: 1rem;
+    }
+
+    /* Адаптивность для моделей */
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .model-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .status-badge {
+        align-self: flex-end;
+    }
+
+    /* Адаптивность для отчетов */
+    .reports-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .report-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .report-actions {
+        flex-direction: column;
+    }
+
+    .report-actions .btn {
+        width: 100%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+
+}

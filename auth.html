@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Seller.ru Analytics</title>
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Подключение основных стилей. Убедитесь, что путь правильный. -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Можно добавить специфичные стили для страницы логина, если нужно, в отдельный файл или тег style -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--primary, #4361ee), var(--secondary, #7209b7));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--gray-800, #343a40);
+        }
+
+        /* Импортируем переменные из styles.css или определяем здесь */
+        :root {
+            /* Если styles.css не подгружается полностью, определите переменные здесь */
+            --primary: #4361ee;
+            --secondary: #7209b7;
+            --success: #06d6a0;
+            --warning: #ffd166;
+            --danger: #ef476f;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-800: #343a40;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 450px;
+            padding: 1rem;
+        }
+
+        .login-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2.5rem;
+            text-align: center;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-header {
+            margin-bottom: 2rem;
+        }
+
+        .login-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .login-header h2 {
+            font-size: 1.75rem;
+            color: var(--gray-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .login-subtitle {
+            color: var(--gray-600, #6c757d);
+            font-size: 1rem;
+        }
+
+        .login-form {
+            text-align: left;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--gray-700, #495057);
+        }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-500, #adb5bd);
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Предполагаем, что .form-control и .btn определены в styles.css */
+        .form-control {
+            padding: 0.85rem 1rem 0.85rem 45px;
+            /* Дополнительный левый отступ для иконки */
+            width: 100%;
+            border: 1px solid var(--gray-300);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+            box-sizing: border-box;
+            /* Добавлено для корректной ширины */
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+            outline: none;
+            /* Убираем стандартный outline */
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            justify-content: center;
+            /* Стили по умолчанию, будут переопределены классами .btn-primary и т.д. */
+            background-color: var(--gray-300);
+            color: var(--gray-800);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-block {
+            width: 100%;
+            padding: 0.85rem;
+            font-size: 1.1rem;
+        }
+
+        .login-error {
+            display: none;
+            /* Изначально скрыто */
+            align-items: center;
+            padding: 0.75rem;
+            background-color: rgba(239, 71, 111, 0.1);
+            color: var(--danger);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .login-footer {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .login-footer p {
+            color: var(--gray-600);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .me-2 {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-chart-line login-icon"></i>
+                <h2>Seller.ru Analytics</h2>
+                <p class="login-subtitle">Войдите для доступа к аналитике</p>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="username">Имя пользователя</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" class="form-control"
+                            placeholder="Введите логин" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" class="form-control"
+                            placeholder="Введите пароль" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-sign-in-alt me-2"></i>Войти
+                    </button>
+                </div>
+                <div id="login-error" class="login-error">
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    <span>Неверное имя пользователя или пароль.</span>
+                </div>
+            </form>
+            <div class="login-footer">
+                <p>Демо-версия. Используйте любые данные для входа.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            'use strict';
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const loginForm = document.getElementById('login-form');
+                if (loginForm) {
+                    loginForm.addEventListener('submit', handleLogin);
+                }
+            });
+
+            function handleLogin(event) {
+                event.preventDefault();
+
+                const username = document.getElementById('username').value.trim();
+                const password = document.getElementById('password').value;
+                const errorElement = document.getElementById('login-error');
+
+                // Простая демонстрационная проверка
+                // В реальном приложении здесь будет запрос к серверу
+                if (username && password) { // Демо: любой не пустой логин/пароль подходит
+                    // Успешная авторизация
+                    localStorage.setItem('isAuthenticated', 'true');
+                    localStorage.setItem('currentUser', username);
+
+                    // Скрываем ошибку, если она была
+                    errorElement.style.display = 'none';
+
+                    // Перенаправляем на главную страницу
+                    window.location.href = 'index.html';
+
+                    console.log(`Пользователь "${username}" вошел в систему. Перенаправление...`);
+                } else {
+                    // Отображаем ошибку
+                    errorElement.style.display = 'flex';
+                    // Анимация для привлечения внимания
+                    errorElement.animate([
+                        { transform: 'translateX(0)' },
+                        { transform: 'translateX(-10px)' },
+                        { transform: 'translateX(10px)' },
+                        { transform: 'translateX(0)' }
+                    ], {
+                        duration: 300,
+                        iterations: 1
+                    });
+                }
+            }
+
+        })();
+    </script>
+</body>
+
+</html>
